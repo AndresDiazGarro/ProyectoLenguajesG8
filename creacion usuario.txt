@@ -1,0 +1,11 @@
+abrir Sql plus
+
+Conn as / system
+Contraseña solo se da enter
+
+alter session set “_ORACLE_SCRIPT” = TRUE;
+Create user g8 identified by g8;
+Grant dba to g8;
+
+
+Luego crear conexion en SQL developer
