@@ -48,7 +48,23 @@ namespace ProyectoLenguajes
         private void button1_Click_1(object sender, EventArgs e)
         {
             conexion.Open();
-            OracleCommand comando = new OracleCommand("SELECT * FROM USUARIOS WHERE NOM_USUARIO = :nom_usuario AND CONTRASENA = :contrasena", conexion);
+            try { 
+                OracleCommand comando = new OracleCommand("VERIFICAR_USUARIO", conexion);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("usua", OracleType.VarChar).Value = txtUsuario.Text;
+                comando.Parameters.Add("cont", OracleType.VarChar).Value = txtContrasena.Text;
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Ingreso exitoso");
+                Form2 formulario3 = new Form2();
+                formulario3.Show();
+                this.Hide();
+            }catch(Exception no_data_found)
+            {
+                MessageBox.Show("Ingreso inválido");
+            }
+            conexion.Close();
+
+            /*OracleCommand comando = new OracleCommand("SELECT * FROM USUARIOS WHERE NOM_USUARIO = :nom_usuario AND CONTRASENA = :contrasena", conexion);
 
             comando.Parameters.AddWithValue(":nom_usuario", txtusuario.Text);
             comando.Parameters.AddWithValue(":contrasena", txtcontrasena.Text);
@@ -57,9 +73,9 @@ namespace ProyectoLenguajes
             {
                 if (lector.Read())
                 {
-                    Form1 formulario = new Form1();
+                    Form1 formulario1 = new Form1();
                     conexion.Close();
-                    formulario.Show();
+                    formulario1.Show();
 
                     MessageBox.Show("Correcto bb");
                 }
@@ -68,12 +84,20 @@ namespace ProyectoLenguajes
 
                     MessageBox.Show("Incorrecto bb");
                 }
-            }
+            }*/
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 formulario3 = new Form3();
+            formulario3.Show();
+
+            this.Hide();
         }
     }
 }

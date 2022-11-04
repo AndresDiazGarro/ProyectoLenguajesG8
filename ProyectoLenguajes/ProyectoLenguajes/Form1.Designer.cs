@@ -28,29 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtusuario = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtcontrasena = new System.Windows.Forms.TextBox();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtusuario
+            // txtUsuario
             // 
-            this.txtusuario.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtusuario.Location = new System.Drawing.Point(311, 159);
-            this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(165, 20);
-            this.txtusuario.TabIndex = 0;
+            this.txtUsuario.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtUsuario.Location = new System.Drawing.Point(311, 159);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(165, 20);
+            this.txtUsuario.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Location = new System.Drawing.Point(259, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 188);
+            this.label1.Size = new System.Drawing.Size(267, 227);
             this.label1.TabIndex = 1;
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
@@ -66,13 +67,13 @@
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txtcontrasena
+            // txtContrasena
             // 
-            this.txtcontrasena.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtcontrasena.Location = new System.Drawing.Point(311, 211);
-            this.txtcontrasena.Name = "txtcontrasena";
-            this.txtcontrasena.Size = new System.Drawing.Size(165, 20);
-            this.txtcontrasena.TabIndex = 3;
+            this.txtContrasena.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtContrasena.Location = new System.Drawing.Point(311, 211);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.Size = new System.Drawing.Size(165, 20);
+            this.txtContrasena.TabIndex = 3;
             // 
             // button1
             // 
@@ -105,6 +106,16 @@
             this.label4.Text = "Contraseña";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(348, 296);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Crear Cuenta";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -113,12 +124,13 @@
             this.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.taller;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(752, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtcontrasena);
+            this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtusuario);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Form1";
@@ -132,13 +144,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtusuario;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtcontrasena;
+        private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button2;
     }
 }
 
