@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OracleClient;
-using OracleDataReader;
 
 namespace ProyectoLenguajes
 {
@@ -49,10 +48,10 @@ namespace ProyectoLenguajes
         private void button1_Click_1(object sender, EventArgs e)
         {
             conexion.Open();
-            OracleCommand comando = new OracleCommand("SELECT * FROM LOGIN WHERE NOM_USUARIO = :usuario AND CONTRASENA = :contra", conexion);
+            OracleCommand comando = new OracleCommand("SELECT * FROM USUARIOS WHERE NOM_USUARIO = :nom_usuario AND CONTRASENA = :contrasena", conexion);
 
-            comando.Parameters.AddWithValue(":usuario", txtusuario.Text);
-            comando.Parameters.AddWithValue(":contra", txtcontrasena.Text);
+            comando.Parameters.AddWithValue(":nom_usuario", txtusuario.Text);
+            comando.Parameters.AddWithValue(":contrasena", txtcontrasena.Text);
 
             OracleDataReader lector = comando.ExecuteReader();
             {
@@ -72,6 +71,9 @@ namespace ProyectoLenguajes
             }
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
