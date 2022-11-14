@@ -16,5 +16,12 @@ namespace ProyectoLenguajes
         {
             InitializeComponent();
         }
+
+        private void btnBicicletas_Click(object sender, EventArgs e)
+        {
+            Form4 formulario4 = new Form4();
+            formulario4.Show();
+            this.Hide();
+        }
     }
 }

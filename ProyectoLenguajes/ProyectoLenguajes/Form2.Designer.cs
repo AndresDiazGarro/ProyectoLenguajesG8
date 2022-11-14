@@ -34,12 +34,12 @@
             this.btnTaller = new System.Windows.Forms.Button();
             this.btnBicicletas = new System.Windows.Forms.Button();
             this.bannerLogo = new System.Windows.Forms.Panel();
-            this.imgLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgLogo = new System.Windows.Forms.PictureBox();
             this.panelNavbar.SuspendLayout();
             this.bannerLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelNavbar
@@ -103,6 +103,7 @@
             this.btnBicicletas.TabIndex = 2;
             this.btnBicicletas.Text = "Bicicletas";
             this.btnBicicletas.UseVisualStyleBackColor = true;
+            this.btnBicicletas.Click += new System.EventHandler(this.btnBicicletas_Click);
             // 
             // bannerLogo
             // 
@@ -113,6 +114,15 @@
             this.bannerLogo.Size = new System.Drawing.Size(175, 73);
             this.bannerLogo.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 72);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(942, 500);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // imgLogo
             // 
             this.imgLogo.BackColor = System.Drawing.Color.Tan;
@@ -122,15 +132,6 @@
             this.imgLogo.Size = new System.Drawing.Size(86, 66);
             this.imgLogo.TabIndex = 2;
             this.imgLogo.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 72);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(942, 500);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // Form2
             // 
@@ -143,8 +144,8 @@
             this.Text = "Form2";
             this.panelNavbar.ResumeLayout(false);
             this.bannerLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
