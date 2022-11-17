@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace ProyectoLenguajes
 {
-    public partial class Form3 : Form
+    public partial class Crear_Cuenta : Form
     {
 
         OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
 
-        public Form3()
+        public Crear_Cuenta()
         {
             InitializeComponent();
         }
@@ -43,6 +43,8 @@ namespace ProyectoLenguajes
                 comando.Parameters.Add("usua", OracleType.VarChar).Value = txtUsuario.Text;
                 comando.Parameters.Add("cont", OracleType.VarChar).Value = txtContrasena.Text;
                 comando.ExecuteNonQuery();
+
+                
              
 
                 MessageBox.Show("Cuenta creada con éxito");

@@ -13,10 +13,13 @@ namespace ProyectoLenguajes
 {
     public partial class Form4 : Form
     {
-        public Form4()
+        public Form4(String usuario_activo)
         {
             InitializeComponent();
+            this.usuario_activo = usuario_activo;
         }
+
+        String usuario_activo;
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
@@ -40,7 +43,7 @@ namespace ProyectoLenguajes
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Form2 formulario2 = new Form2();
+            Form2 formulario2 = new Form2(usuario_activo);
             formulario2.Show();
             this.Hide();
         }

@@ -12,21 +12,26 @@ namespace ProyectoLenguajes
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(String usuario_activo)
         {
             InitializeComponent();
+            this.usuario_activo = usuario_activo;
         }
+
+        String usuario_activo;
 
         private void btnBicicletas_Click(object sender, EventArgs e)
         {
-            Form4 formulario4 = new Form4();
+            Form4 formulario4 = new Form4(usuario_activo);
             formulario4.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Perfil perfil = new Perfil(usuario_activo);
+            perfil.Show();
+            this.Hide();
         }
     }
 }

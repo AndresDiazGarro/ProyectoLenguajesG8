@@ -54,8 +54,9 @@ namespace ProyectoLenguajes
                 comando.Parameters.Add("usua", OracleType.VarChar).Value = txtUsuario.Text;
                 comando.Parameters.Add("cont", OracleType.VarChar).Value = txtContrasena.Text;
                 comando.ExecuteNonQuery();
+                String usuario_activo = txtUsuario.Text;
                 MessageBox.Show("Ingreso exitoso");
-                Form2 formulario3 = new Form2();
+                Form2 formulario3 = new Form2(usuario_activo);
                 formulario3.Show();
                 this.Hide();
             }catch(Exception no_data_found)
@@ -94,7 +95,7 @@ namespace ProyectoLenguajes
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 formulario3 = new Form3();
+            Crear_Cuenta formulario3 = new Crear_Cuenta();
             formulario3.Show();
 
             this.Hide();

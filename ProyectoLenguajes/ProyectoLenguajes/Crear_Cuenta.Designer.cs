@@ -1,6 +1,6 @@
 ﻿namespace ProyectoLenguajes
 {
-    partial class Form3
+    partial class Crear_Cuenta
     {
         /// <summary>
         /// Required designer variable.
@@ -143,7 +143,7 @@
             this.txtNombre.Size = new System.Drawing.Size(83, 20);
             this.txtNombre.TabIndex = 20;
             // 
-            // Form3
+            // Crear_Cuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -161,7 +161,7 @@
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form3";
+            this.Name = "Crear_Cuenta";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
