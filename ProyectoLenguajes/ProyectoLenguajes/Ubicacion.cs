@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GMap.NET;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-Imports System.Text;
 
 namespace ProyectoLenguajes
 {
@@ -20,16 +20,21 @@ namespace ProyectoLenguajes
         }
 
         private void button1_Click(object sender, EventArgs e)
-            Dim postcode As String = String.Empty
-            Dim stringSearch As New StringBuilder
 
-            stringSearch.append("http://www.google.com/maps")
-            If txtSearch.Text <> String.Empty Then
-                postcode = txtSearch.Text.Replace("","+")
-                stringSearch.Append(postcode + "," & "+")
-            End If
+        {
 
-            WebBrowser.Navigate(stringSearch.ToString)
+        }
+
+        private void gMap_Load(object sender, EventArgs e)
+        {
+            gMap.MapProvider = GMap.NET.MapProviders.BingMapProvider.Instance; //Establece proveedor de mapas
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly; //Configura en solo datos del servidor
+            gMap.SetPositionByKeywords("San Jose, Costa Rica"); //Establecer Ciudad, Pais
+            gMap.Position = new GMap.NET.PointLatLng(9.9363147, -84.0790631); //Coordenadas de Ciclo Boutique CR
+            gMap.ShowCenter = false; //Eliminar + Rojo en gMap
+        }
+
+        private void Ubicacion_Load(object sender, EventArgs e)
         {
 
         }
