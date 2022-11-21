@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelNavbar = new System.Windows.Forms.Panel();
+            this.btnPerfil = new System.Windows.Forms.Button();
             this.btnSN = new System.Windows.Forms.Button();
             this.btnUbicacion = new System.Windows.Forms.Button();
             this.btnTaller = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.bannerLogo = new System.Windows.Forms.Panel();
             this.imgLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnPerfil = new System.Windows.Forms.Button();
             this.panelNavbar.SuspendLayout();
             this.bannerLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
@@ -57,6 +57,19 @@
             this.panelNavbar.Name = "panelNavbar";
             this.panelNavbar.Size = new System.Drawing.Size(942, 73);
             this.panelNavbar.TabIndex = 0;
+            // 
+            // btnPerfil
+            // 
+            this.btnPerfil.FlatAppearance.BorderSize = 0;
+            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerfil.Location = new System.Drawing.Point(494, 9);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(129, 57);
+            this.btnPerfil.TabIndex = 6;
+            this.btnPerfil.Text = "Perfil";
+            this.btnPerfil.UseVisualStyleBackColor = true;
+            this.btnPerfil.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnSN
             // 
@@ -81,6 +94,7 @@
             this.btnUbicacion.TabIndex = 4;
             this.btnUbicacion.Text = "Ubicación";
             this.btnUbicacion.UseVisualStyleBackColor = true;
+            this.btnUbicacion.Click += new System.EventHandler(this.btnUbicacion_Click);
             // 
             // btnTaller
             // 
@@ -134,19 +148,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(942, 500);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnPerfil
-            // 
-            this.btnPerfil.FlatAppearance.BorderSize = 0;
-            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerfil.Location = new System.Drawing.Point(494, 9);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(129, 57);
-            this.btnPerfil.TabIndex = 6;
-            this.btnPerfil.Text = "Perfil";
-            this.btnPerfil.UseVisualStyleBackColor = true;
-            this.btnPerfil.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 

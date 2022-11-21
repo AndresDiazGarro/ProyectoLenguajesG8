@@ -33,5 +33,12 @@ namespace ProyectoLenguajes
             perfil.Show();
             this.Hide();
         }
+
+        private void btnUbicacion_Click(object sender, EventArgs e)
+        {
+            Ubicacion ubicacion = new Ubicacion();
+            ubicacion.Show();
+            this.Hide();
+        }
     }
 }
