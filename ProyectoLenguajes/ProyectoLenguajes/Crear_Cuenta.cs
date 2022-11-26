@@ -33,35 +33,67 @@ namespace ProyectoLenguajes
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             try
             {
                 conexion.Open();
-                OracleCommand comando = new OracleCommand("CREAR_USUARIO", conexion);
-                comando.CommandType = System.Data.CommandType.StoredProcedure;
-                comando.Parameters.Add("nom", OracleType.VarChar).Value = txtNombre.Text;
-                comando.Parameters.Add("apell", OracleType.VarChar).Value = txtApellido.Text;
-                comando.Parameters.Add("usua", OracleType.VarChar).Value = txtUsuario.Text;
-                comando.Parameters.Add("cont", OracleType.VarChar).Value = txtContrasena.Text;
-                comando.ExecuteNonQuery();
+                OracleCommand comando1 = new OracleCommand("CREACION_CUENTA.VERIFICAR_REPETIDO", conexion);
+                comando1.CommandType = System.Data.CommandType.StoredProcedure;
+                comando1.Parameters.Add("usua", OracleType.VarChar).Value = txtUsuario.Text;
+                comando1.ExecuteNonQuery();
 
-                
-             
-
-                MessageBox.Show("Cuenta creada con éxito");
-
-                Form1 formulario1 = new Form1();
-                formulario1.Show();
-                this.Hide();
-
-
-            } catch (Exception) {
-
-                MessageBox.Show("Error al crear la cuenta");
-
+                MessageBox.Show("El nombre de usuario ya existe");
 
             }
+            catch (Exception)
+            {
+
+
+                try
+                {
+                    OracleCommand comando2 = new OracleCommand("CREACION_CUENTA.CREAR_USUARIO", conexion);
+                    comando2.CommandType = System.Data.CommandType.StoredProcedure;
+                    comando2.Parameters.Add("nom", OracleType.VarChar).Value = txtNombre.Text;
+                    comando2.Parameters.Add("apell", OracleType.VarChar).Value = txtApellido.Text;
+                    comando2.Parameters.Add("usua", OracleType.VarChar).Value = txtUsuario.Text;
+                    comando2.Parameters.Add("cont", OracleType.VarChar).Value = txtContrasena.Text;
+                    if (rbCliente.Checked == true)
+                    {
+                        comando2.Parameters.Add("rol", OracleType.VarChar).Value = "Cliente";
+                    }
+                    else if (rbAdministrador.Checked == true && txtClave.Text.Equals("admin"))
+                    {
+                        comando2.Parameters.Add("rol", OracleType.VarChar).Value = "Administrador";
+                    }
+
+                    comando2.ExecuteNonQuery();
+
+
+
+
+                    MessageBox.Show("Cuenta creada con éxito");
+
+                    Form1 formulario1 = new Form1();
+                    formulario1.Show();
+                    this.Hide();
+
+
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("Error al crear la cuenta");
+
+
+                }
+                
+            }
             conexion.Close();
-            
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

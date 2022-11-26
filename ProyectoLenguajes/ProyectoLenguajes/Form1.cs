@@ -14,7 +14,7 @@ namespace ProyectoLenguajes
     public partial class Form1 : Form
 
     {
-        OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = Kath170521; USER ID = system;");
+        OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
       
         public Form1()
         {
@@ -49,7 +49,7 @@ namespace ProyectoLenguajes
         {
             conexion.Open();
             try { 
-                OracleCommand comando = new OracleCommand("VERIFICAR_USUARIO", conexion);
+                OracleCommand comando = new OracleCommand("INICIO_SESION.VERIFICAR_USUARIO", conexion);
                 comando.CommandType = System.Data.CommandType.StoredProcedure;
                 comando.Parameters.Add("usua", OracleType.VarChar).Value = txtUsuario.Text;
                 comando.Parameters.Add("cont", OracleType.VarChar).Value = txtContrasena.Text;
@@ -64,28 +64,6 @@ namespace ProyectoLenguajes
                 MessageBox.Show("Ingreso inválido");
             }
             conexion.Close();
-
-            /*OracleCommand comando = new OracleCommand("SELECT * FROM USUARIOS WHERE NOM_USUARIO = :nom_usuario AND CONTRASENA = :contrasena", conexion);
-
-            comando.Parameters.AddWithValue(":nom_usuario", txtusuario.Text);
-            comando.Parameters.AddWithValue(":contrasena", txtcontrasena.Text);
-
-            OracleDataReader lector = comando.ExecuteReader();
-            {
-                if (lector.Read())
-                {
-                    Form1 formulario1 = new Form1();
-                    conexion.Close();
-                    formulario1.Show();
-
-                    MessageBox.Show("Correcto bb");
-                }
-                else
-                {
-
-                    MessageBox.Show("Incorrecto bb");
-                }
-            }*/
         }
 
         private void label4_Click(object sender, EventArgs e)

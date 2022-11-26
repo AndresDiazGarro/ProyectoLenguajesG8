@@ -18,6 +18,7 @@ Nombre VARCHAR2 (30) NOT NULL,
 Apellido VARCHAR2 (30) NOT NULL,
 Nom_Usuario VARCHAR2 (30) NOT NULL,
 Contrasena VARCHAR2(20) NOT NULL,
+Rol VARCHAR2(20) NOT NULL,
 ID_tarjeta NUMBER (38),
 CONSTRAINT PK_Usuarios PRIMARY KEY(ID_Usuario),
 CONSTRAINT FK_Tarjetas FOREIGN KEY (ID_tarjeta) REFERENCES Tarjetas(ID_tarjeta)
@@ -122,4 +123,5 @@ CONSTRAINT FK_UsuarioFactura FOREIGN KEY (ID_Usuario) REFERENCES Usuario(ID_Usua
 CONSTRAINT FK_BicicletaFactura FOREIGN KEY (ID_Bicicleta) REFERENCES Marca(ID_Bicicleta)
 );
 
+select * from Usuarios;
 
