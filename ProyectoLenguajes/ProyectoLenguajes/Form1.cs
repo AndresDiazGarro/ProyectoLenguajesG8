@@ -14,7 +14,7 @@ namespace ProyectoLenguajes
     public partial class Form1 : Form
 
     {
-        OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
+        OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = Kath170521; USER ID = system;");
       
         public Form1()
         {
