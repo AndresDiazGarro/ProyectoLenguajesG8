@@ -82,6 +82,7 @@
             this.btnSN.TabIndex = 5;
             this.btnSN.Text = "Sobre Nosotros";
             this.btnSN.UseVisualStyleBackColor = true;
+            this.btnSN.Click += new System.EventHandler(this.btnSN_Click);
             // 
             // btnUbicacion
             // 
@@ -107,6 +108,7 @@
             this.btnTaller.TabIndex = 3;
             this.btnTaller.Text = "Taller";
             this.btnTaller.UseVisualStyleBackColor = true;
+            this.btnTaller.Click += new System.EventHandler(this.btnTaller_Click);
             // 
             // btnBicicletas
             // 

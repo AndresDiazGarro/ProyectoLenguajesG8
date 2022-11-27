@@ -71,6 +71,18 @@
     <Compile Include="Crear_Cuenta.Designer.cs">
       <DependentUpon>Crear_Cuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="SobreNosotros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SobreNosotros.Designer.cs">
+      <DependentUpon>SobreNosotros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taller.Designer.cs">
+      <DependentUpon>Taller.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ubicacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Crear_Cuenta.resx">
       <DependentUpon>Crear_Cuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SobreNosotros.resx">
+      <DependentUpon>SobreNosotros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taller.resx">
+      <DependentUpon>Taller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ubicacion.resx">
       <DependentUpon>Ubicacion.cs</DependentUpon>
