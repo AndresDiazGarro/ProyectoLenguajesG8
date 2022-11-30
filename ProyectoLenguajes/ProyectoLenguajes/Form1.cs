@@ -56,9 +56,29 @@ namespace ProyectoLenguajes
                 comando.ExecuteNonQuery();
                 String usuario_activo = txtUsuario.Text;
                 MessageBox.Show("Ingreso exitoso");
-                Form2 formulario3 = new Form2(usuario_activo);
-                formulario3.Show();
-                this.Hide();
+
+
+                OracleCommand comando2 = new OracleCommand("INICIO_SESION.VERIFICAR_ROL", conexion);
+                comando2.CommandType = System.Data.CommandType.StoredProcedure;
+                comando2.Parameters.Add("usua", OracleType.VarChar).Value = txtUsuario.Text;
+                comando2.Parameters.Add("result", OracleType.Number).Direction = System.Data.ParameterDirection.ReturnValue;
+                comando2.ExecuteNonQuery();
+                int resultado = (int)comando.Parameters["result"].Value;
+                //MessageBox.Show("resultado: " + resultado);
+                if (resultado == 0)
+                {
+                    Form2 formulario3 = new Form2(usuario_activo);
+                    formulario3.Show();
+                    this.Hide();
+                } else if (resultado == 1)
+                {
+                    Interfaz_admin int_admin = new Interfaz_admin();
+                    int_admin.Show();
+                    this.Hide();
+                }
+
+
+                
             }catch(Exception no_data_found)
             {
                 MessageBox.Show("Ingreso inválido");

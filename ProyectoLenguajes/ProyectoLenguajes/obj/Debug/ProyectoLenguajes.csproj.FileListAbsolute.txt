@@ -36,3 +36,5 @@ C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\Proyec
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\bin\Debug\GMap.NET.WindowsForms.dll
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Ubicacion.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.csproj.CopyComplete
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.SobreNosotros.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Taller.resources
