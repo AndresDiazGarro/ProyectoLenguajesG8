@@ -47,5 +47,12 @@ namespace ProyectoLenguajes
             formulario2.Show();
             this.Hide();
         }
+
+        private void btnAddBike_Click(object sender, EventArgs e)
+        {
+            AgregarBici AddBike = new AgregarBici();
+            AddBike.Show();
+            this.Hide();
+        }
     }
 }

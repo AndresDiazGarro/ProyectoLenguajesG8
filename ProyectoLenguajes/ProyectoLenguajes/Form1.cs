@@ -43,10 +43,16 @@ namespace ProyectoLenguajes
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            /****************** QUITAR ESTAS 4 LINEAS DE CODIGO *************************/
+            string usuario_activo = null;/**/
+            Form2 f2 = new Form2(usuario_activo);/**/
+            f2.Show();/**/
+            this.Hide();/**/
+            /****************** QUITAR ESTAS 4 LINEAS DE CODIGO *************************/
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
+
             conexion.Open();
             try { 
                 OracleCommand comando = new OracleCommand("INICIO_SESION.VERIFICAR_USUARIO", conexion);
@@ -95,7 +101,6 @@ namespace ProyectoLenguajes
         {
             Crear_Cuenta formulario3 = new Crear_Cuenta();
             formulario3.Show();
-
             this.Hide();
         }
     }

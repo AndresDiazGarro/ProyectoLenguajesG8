@@ -18,6 +18,10 @@ namespace ProyectoLenguajes
             this.usuario_activo = usuario_activo;
         }
 
+        public Form2()
+        {
+        }
+
         String usuario_activo;
 
         private void btnBicicletas_Click(object sender, EventArgs e)
