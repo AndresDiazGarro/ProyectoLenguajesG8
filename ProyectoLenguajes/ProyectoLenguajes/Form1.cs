@@ -43,13 +43,9 @@ namespace ProyectoLenguajes
 
         private void label2_Click(object sender, EventArgs e)
         {
-            /****************** QUITAR ESTAS 4 LINEAS DE CODIGO *************************/
-            string usuario_activo = null;/**/
-            Form2 f2 = new Form2(usuario_activo);/**/
-            f2.Show();/**/
-            this.Hide();/**/
-            /****************** QUITAR ESTAS 4 LINEAS DE CODIGO *************************/
+
         }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
 
@@ -61,29 +57,31 @@ namespace ProyectoLenguajes
                 comando.Parameters.Add("cont", OracleType.VarChar).Value = txtContrasena.Text;
                 comando.ExecuteNonQuery();
                 String usuario_activo = txtUsuario.Text;
-                MessageBox.Show("Ingreso exitoso");
 
 
                 OracleCommand comando2 = new OracleCommand("INICIO_SESION.VERIFICAR_ROL", conexion);
                 comando2.CommandType = System.Data.CommandType.StoredProcedure;
                 comando2.Parameters.Add("usua", OracleType.VarChar).Value = txtUsuario.Text;
-                comando2.Parameters.Add("result", OracleType.Number).Direction = System.Data.ParameterDirection.ReturnValue;
+                comando2.Parameters.Add("rol_cursor", OracleType.Cursor).Direction = ParameterDirection.Output;
                 comando2.ExecuteNonQuery();
-                int resultado = (int)comando.Parameters["result"].Value;
-                //MessageBox.Show("resultado: " + resultado);
-                if (resultado == 0)
+                OracleDataReader registro = comando2.ExecuteReader();
+                if (registro.Read())
                 {
-                    Form2 formulario3 = new Form2(usuario_activo);
-                    formulario3.Show();
-                    this.Hide();
-                } else if (resultado == 1)
-                {
-                    Interfaz_admin int_admin = new Interfaz_admin();
-                    int_admin.Show();
-                    this.Hide();
+                    if (registro["Rol"].ToString().Equals("Cliente"))
+                    {
+                        MessageBox.Show("Ingreso exitoso");
+                        Interfaz_cliente int_cliente = new Interfaz_cliente(usuario_activo);
+                        int_cliente.Show();
+                        this.Hide();
+                    }
+                    else if (registro["Rol"].ToString().Equals("Administrador"))
+                    {
+                        MessageBox.Show("Ingreso exitoso");
+                        Interfaz_admin int_admin = new Interfaz_admin(usuario_activo);
+                        int_admin.Show();
+                        this.Hide();
+                    }
                 }
-
-
                 
             }catch(Exception no_data_found)
             {

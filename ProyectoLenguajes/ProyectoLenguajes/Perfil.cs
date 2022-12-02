@@ -13,6 +13,9 @@ namespace ProyectoLenguajes
 {
     public partial class Perfil : Form
     {
+
+        OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
+
         public Perfil(String usuario_activo)
         {
             InitializeComponent();
@@ -20,7 +23,7 @@ namespace ProyectoLenguajes
         }
 
         String usuario_activo;
-        OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
+        
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -39,7 +42,55 @@ namespace ProyectoLenguajes
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                conexion.Open();
+                OracleCommand comando = new OracleCommand("PERFIL.ACTUALIZAR_USUARIO", conexion);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("usua_act", OracleType.VarChar).Value = usuario_activo;
+                comando.Parameters.Add("nom", OracleType.VarChar).Value = txtNombre.Text;
+                comando.Parameters.Add("apell", OracleType.VarChar).Value = txtApellidos.Text;
+                comando.Parameters.Add("usua", OracleType.VarChar).Value = txtUsuario.Text;
+                comando.Parameters.Add("cont", OracleType.VarChar).Value = txtContrasena.Text;
+                if (rbCliente.Checked == true)
+                {
+                    comando.Parameters.Add("rol", OracleType.VarChar).Value = "Cliente";
+                }
+                else if (rbAdministrador.Checked == true && txtClave.Text.Equals("admin"))
+                {
+                    comando.Parameters.Add("rol", OracleType.VarChar).Value = "Administrador";
+                }
+                comando.ExecuteNonQuery();
+                usuario_activo = txtUsuario.Text;
 
+                OracleCommand comando2 = new OracleCommand("INICIO_SESION.VERIFICAR_ROL", conexion);
+                comando2.CommandType = System.Data.CommandType.StoredProcedure;
+                comando2.Parameters.Add("usua", OracleType.VarChar).Value = usuario_activo;
+                comando2.Parameters.Add("rol_cursor", OracleType.Cursor).Direction = ParameterDirection.Output;
+                comando2.ExecuteNonQuery();
+                OracleDataReader registro = comando2.ExecuteReader();
+                if (registro.Read())
+                {
+                    if (registro["Rol"].ToString().Equals("Cliente"))
+                    {
+                        MessageBox.Show("Actualización exitosa");
+                    }
+                    else if (registro["Rol"].ToString().Equals("Administrador"))
+                    {
+                        MessageBox.Show("Actualización exitosa");
+                        Interfaz_admin int_admin = new Interfaz_admin(usuario_activo);
+                        int_admin.Show();
+                        this.Hide();
+                    }
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Actualización inválida");
+
+            }
+            conexion.Close();
         }
 
         private void Perfil_Load(object sender, EventArgs e)
@@ -47,27 +98,63 @@ namespace ProyectoLenguajes
             try
             {
                 conexion.Open();
-                OracleCommand comando = new OracleCommand("MOSTRAR_DATOS_USUARIOS", conexion);
+                OracleCommand comando = new OracleCommand("PERFIL.MOSTRAR_DATOS_USUARIO", conexion);
                 comando.CommandType = System.Data.CommandType.StoredProcedure;
                 comando.Parameters.Add("usua_act", OracleType.VarChar).Value = usuario_activo;
-                comando.Parameters.Add("nom", OracleType.VarChar).Direction = ParameterDirection.Output;
-                comando.Parameters.Add("apell", OracleType.VarChar).Direction = ParameterDirection.Output;
-                comando.Parameters.Add("usua", OracleType.VarChar).Direction = ParameterDirection.Output;
-                comando.Parameters.Add("cont", OracleType.VarChar).Direction = ParameterDirection.Output;
+                comando.Parameters.Add("datos_usuario", OracleType.Cursor).Direction = ParameterDirection.Output;
                 comando.ExecuteNonQuery();
-                txtUsuario.Text = usuario_activo;
                 OracleDataReader datos = comando.ExecuteReader();
                 if (datos.Read())
                 {
+                    
+                    txtNombre.Text = datos["Nombre"].ToString();
+                    txtApellidos.Text = datos["Apellido"].ToString();
+                    txtUsuario.Text = datos["Nom_usuario"].ToString();
+                    txtContrasena.Text = datos["Contrasena"].ToString();
+                    if (datos["Rol"].ToString().Equals("Cliente")){
+                        rbCliente.Checked = true;
+                    }else if (datos["Rol"].ToString().Equals("Administrador")){
+                        rbAdministrador.Checked = true;
+                    }
                     
                 }
 
 
             } catch (Exception)
             {
+                MessageBox.Show("Algo salió mal");
 
             }
             conexion.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conexion.Open();
+                OracleCommand comando = new OracleCommand("PERFIL.ELIMINAR_USUARIO", conexion);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("usua_act", OracleType.VarChar).Value = usuario_activo;
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Cuenta eliminada con éxito");
+                Form1 formulario1 = new Form1();
+                formulario1.Show();
+                this.Hide();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error en la eliminación");
+
+            }
+            conexion.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 formulario1 = new Form1();
+            formulario1.Show();
+            this.Hide();
         }
     }
 }

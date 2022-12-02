@@ -71,11 +71,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Interfaz_admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Interfaz_admin.Designer.cs">
+      <DependentUpon>Interfaz_admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Crear_Cuenta.cs">
       <SubType>Form</SubType>
@@ -89,11 +89,11 @@
     <Compile Include="Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz_admin.cs">
+    <Compile Include="Interfaz_cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaz_admin.Designer.cs">
-      <DependentUpon>Interfaz_admin.cs</DependentUpon>
+    <Compile Include="Interfaz_cliente.Designer.cs">
+      <DependentUpon>Interfaz_cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="SobreNosotros.cs">
       <SubType>Form</SubType>
@@ -139,11 +139,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Interfaz_admin.resx">
+      <DependentUpon>Interfaz_admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Crear_Cuenta.resx">
       <DependentUpon>Crear_Cuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz_cliente.resx">
+      <DependentUpon>Interfaz_cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SobreNosotros.resx">
       <DependentUpon>SobreNosotros.cs</DependentUpon>

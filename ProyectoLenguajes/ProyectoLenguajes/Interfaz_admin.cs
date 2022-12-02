@@ -12,9 +12,51 @@ namespace ProyectoLenguajes
 {
     public partial class Interfaz_admin : Form
     {
-        public Interfaz_admin()
+        public Interfaz_admin(String usuario_activo)
         {
             InitializeComponent();
+            this.usuario_activo = usuario_activo;
+        }
+
+        public Interfaz_admin()
+        {
+        }
+
+        String usuario_activo;
+
+        private void btnBicicletas_Click(object sender, EventArgs e)
+        {
+            Form4 formulario4 = new Form4(usuario_activo);
+            formulario4.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Perfil perfil = new Perfil(usuario_activo);
+            perfil.Show();
+            this.Hide();
+        }
+
+        private void btnUbicacion_Click(object sender, EventArgs e)
+        {
+            Ubicacion ubicacion = new Ubicacion();
+            ubicacion.Show();
+            this.Hide();
+        }
+
+        private void btnTaller_Click(object sender, EventArgs e)
+        {
+            Taller taller = new Taller(usuario_activo);
+            taller.Show();
+            this.Hide();
+        }
+
+        private void btnSN_Click(object sender, EventArgs e)
+        {
+            SobreNosotros SN = new SobreNosotros(usuario_activo);
+            SN.Show();
+            this.Hide();
         }
     }
 }

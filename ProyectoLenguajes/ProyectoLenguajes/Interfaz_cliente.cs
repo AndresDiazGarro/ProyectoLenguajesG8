@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoLenguajes
 {
-    public partial class SobreNosotros : Form
+    public partial class Interfaz_cliente : Form
     {
-        public SobreNosotros(String usuario_activo)
+        public Interfaz_cliente(String usuario_activo)
         {
             InitializeComponent();
             this.usuario_activo = usuario_activo;
@@ -20,15 +20,10 @@ namespace ProyectoLenguajes
 
         String usuario_activo;
 
-        private void SobreNosotros_Load(object sender, EventArgs e)
+        private void btnPerfil_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            Interfaz_admin formulario2 = new Interfaz_admin(usuario_activo);
-            formulario2.Show();
+            Perfil perfil = new Perfil(usuario_activo);
+            perfil.Show();
             this.Hide();
         }
     }

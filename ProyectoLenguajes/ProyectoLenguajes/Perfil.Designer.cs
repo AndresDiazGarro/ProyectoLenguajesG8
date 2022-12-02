@@ -41,6 +41,12 @@
             this.txtContrasena = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.rbCliente = new System.Windows.Forms.RadioButton();
+            this.rbAdministrador = new System.Windows.Forms.RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtClave = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -66,7 +72,7 @@
             // 
             this.label3.BackColor = System.Drawing.Color.Wheat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(285, 125);
+            this.label3.Location = new System.Drawing.Point(177, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 36);
             this.label3.TabIndex = 2;
@@ -76,7 +82,7 @@
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.Wheat;
-            this.txtNombre.Location = new System.Drawing.Point(391, 131);
+            this.txtNombre.Location = new System.Drawing.Point(273, 121);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 3;
@@ -96,7 +102,7 @@
             // 
             this.label5.BackColor = System.Drawing.Color.Wheat;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(285, 194);
+            this.label5.Location = new System.Drawing.Point(416, 115);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 36);
             this.label5.TabIndex = 5;
@@ -105,7 +111,7 @@
             // txtApellidos
             // 
             this.txtApellidos.BackColor = System.Drawing.Color.Wheat;
-            this.txtApellidos.Location = new System.Drawing.Point(391, 200);
+            this.txtApellidos.Location = new System.Drawing.Point(530, 121);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(100, 20);
             this.txtApellidos.TabIndex = 6;
@@ -114,7 +120,7 @@
             // 
             this.label6.BackColor = System.Drawing.Color.Wheat;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(285, 263);
+            this.label6.Location = new System.Drawing.Point(285, 173);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(108, 36);
             this.label6.TabIndex = 7;
@@ -123,7 +129,7 @@
             // txtUsuario
             // 
             this.txtUsuario.BackColor = System.Drawing.Color.Wheat;
-            this.txtUsuario.Location = new System.Drawing.Point(391, 269);
+            this.txtUsuario.Location = new System.Drawing.Point(399, 179);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 8;
@@ -132,7 +138,7 @@
             // 
             this.label7.BackColor = System.Drawing.Color.Wheat;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(285, 326);
+            this.label7.Location = new System.Drawing.Point(177, 247);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(130, 36);
             this.label7.TabIndex = 9;
@@ -141,7 +147,7 @@
             // txtContrasena
             // 
             this.txtContrasena.BackColor = System.Drawing.Color.Wheat;
-            this.txtContrasena.Location = new System.Drawing.Point(421, 332);
+            this.txtContrasena.Location = new System.Drawing.Point(302, 253);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(100, 20);
             this.txtContrasena.TabIndex = 10;
@@ -164,6 +170,69 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Borrar Cuenta";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Wheat;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(285, 325);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(130, 36);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Rol:";
+            // 
+            // rbCliente
+            // 
+            this.rbCliente.AutoSize = true;
+            this.rbCliente.BackColor = System.Drawing.Color.Wheat;
+            this.rbCliente.Location = new System.Drawing.Point(345, 332);
+            this.rbCliente.Name = "rbCliente";
+            this.rbCliente.Size = new System.Drawing.Size(57, 17);
+            this.rbCliente.TabIndex = 15;
+            this.rbCliente.TabStop = true;
+            this.rbCliente.Text = "Cliente";
+            this.rbCliente.UseVisualStyleBackColor = false;
+            // 
+            // rbAdministrador
+            // 
+            this.rbAdministrador.AutoSize = true;
+            this.rbAdministrador.BackColor = System.Drawing.Color.Wheat;
+            this.rbAdministrador.Location = new System.Drawing.Point(439, 332);
+            this.rbAdministrador.Name = "rbAdministrador";
+            this.rbAdministrador.Size = new System.Drawing.Size(88, 17);
+            this.rbAdministrador.TabIndex = 16;
+            this.rbAdministrador.TabStop = true;
+            this.rbAdministrador.Text = "Administrador";
+            this.rbAdministrador.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Wheat;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(416, 247);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(140, 36);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Clave Admin:";
+            // 
+            // txtClave
+            // 
+            this.txtClave.BackColor = System.Drawing.Color.Wheat;
+            this.txtClave.Location = new System.Drawing.Point(553, 253);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(100, 20);
+            this.txtClave.TabIndex = 18;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(669, 393);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(103, 23);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Cerrar Sesion";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Perfil
             // 
@@ -171,6 +240,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.txtClave);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.rbAdministrador);
+            this.Controls.Add(this.rbCliente);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtContrasena);
@@ -207,5 +282,11 @@
         public System.Windows.Forms.TextBox txtApellidos;
         public System.Windows.Forms.TextBox txtUsuario;
         public System.Windows.Forms.TextBox txtContrasena;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RadioButton rbCliente;
+        private System.Windows.Forms.RadioButton rbAdministrador;
+        private System.Windows.Forms.Label label9;
+        public System.Windows.Forms.TextBox txtClave;
+        private System.Windows.Forms.Button button3;
     }
 }

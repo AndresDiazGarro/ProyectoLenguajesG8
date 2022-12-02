@@ -43,7 +43,7 @@ namespace ProyectoLenguajes
         
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Form2 formulario2 = new Form2(usuario_activo);
+            Interfaz_admin formulario2 = new Interfaz_admin(usuario_activo);
             formulario2.Show();
             this.Hide();
         }

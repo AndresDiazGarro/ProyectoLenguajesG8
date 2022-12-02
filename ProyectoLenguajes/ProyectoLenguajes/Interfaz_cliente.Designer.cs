@@ -1,6 +1,6 @@
 ﻿namespace ProyectoLenguajes
 {
-    partial class Form2
+    partial class Interfaz_cliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelNavbar = new System.Windows.Forms.Panel();
             this.btnPerfil = new System.Windows.Forms.Button();
             this.btnSN = new System.Windows.Forms.Button();
@@ -36,12 +37,20 @@
             this.btnBicicletas = new System.Windows.Forms.Button();
             this.bannerLogo = new System.Windows.Forms.Panel();
             this.imgLogo = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelNavbar.SuspendLayout();
             this.bannerLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
+            this.pictureBox1.Location = new System.Drawing.Point(-62, 72);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1033, 439);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // panelNavbar
             // 
@@ -55,8 +64,8 @@
             this.panelNavbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNavbar.Location = new System.Drawing.Point(0, 0);
             this.panelNavbar.Name = "panelNavbar";
-            this.panelNavbar.Size = new System.Drawing.Size(942, 73);
-            this.panelNavbar.TabIndex = 0;
+            this.panelNavbar.Size = new System.Drawing.Size(962, 73);
+            this.panelNavbar.TabIndex = 2;
             // 
             // btnPerfil
             // 
@@ -69,7 +78,7 @@
             this.btnPerfil.TabIndex = 6;
             this.btnPerfil.Text = "Perfil";
             this.btnPerfil.UseVisualStyleBackColor = true;
-            this.btnPerfil.Click += new System.EventHandler(this.button1_Click);
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // btnSN
             // 
@@ -82,7 +91,6 @@
             this.btnSN.TabIndex = 5;
             this.btnSN.Text = "Sobre Nosotros";
             this.btnSN.UseVisualStyleBackColor = true;
-            this.btnSN.Click += new System.EventHandler(this.btnSN_Click);
             // 
             // btnUbicacion
             // 
@@ -95,7 +103,6 @@
             this.btnUbicacion.TabIndex = 4;
             this.btnUbicacion.Text = "Ubicación";
             this.btnUbicacion.UseVisualStyleBackColor = true;
-            this.btnUbicacion.Click += new System.EventHandler(this.btnUbicacion_Click);
             // 
             // btnTaller
             // 
@@ -108,7 +115,6 @@
             this.btnTaller.TabIndex = 3;
             this.btnTaller.Text = "Taller";
             this.btnTaller.UseVisualStyleBackColor = true;
-            this.btnTaller.Click += new System.EventHandler(this.btnTaller_Click);
             // 
             // btnBicicletas
             // 
@@ -121,7 +127,6 @@
             this.btnBicicletas.TabIndex = 2;
             this.btnBicicletas.Text = "Bicicletas";
             this.btnBicicletas.UseVisualStyleBackColor = true;
-            this.btnBicicletas.Click += new System.EventHandler(this.btnBicicletas_Click);
             // 
             // bannerLogo
             // 
@@ -142,42 +147,33 @@
             this.imgLogo.TabIndex = 2;
             this.imgLogo.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 72);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(942, 500);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Form2
+            // Interfaz_cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 568);
+            this.ClientSize = new System.Drawing.Size(962, 516);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelNavbar);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "Interfaz_cliente";
+            this.Text = "Interfaz_cliente";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelNavbar.ResumeLayout(false);
             this.bannerLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelNavbar;
+        private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Button btnSN;
         private System.Windows.Forms.Button btnUbicacion;
         private System.Windows.Forms.Button btnTaller;
         private System.Windows.Forms.Button btnBicicletas;
         private System.Windows.Forms.Panel bannerLogo;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox imgLogo;
-        private System.Windows.Forms.Button btnPerfil;
     }
 }
