@@ -80,6 +80,11 @@ namespace ProyectoLenguajes
             formulario4.Show();
             this.Hide();
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

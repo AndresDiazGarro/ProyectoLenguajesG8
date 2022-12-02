@@ -60,8 +60,13 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.bicisGrid = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.bicisGrid)).BeginInit();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.txtCant = new System.Windows.Forms.TextBox();
+            this.txtPrec = new System.Windows.Forms.TextBox();
+            this.txtMont = new System.Windows.Forms.TextBox();
+            this.detallesGrid = new System.Windows.Forms.DataGridView();
+            this.btnDetalles = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.detallesGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -362,7 +367,7 @@
             this.label22.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label22.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label22.Location = new System.Drawing.Point(478, 304);
+            this.label22.Location = new System.Drawing.Point(464, 304);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(101, 17);
             this.label22.TabIndex = 30;
@@ -374,27 +379,78 @@
             this.label23.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label23.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label23.Location = new System.Drawing.Point(683, 304);
+            this.label23.Location = new System.Drawing.Point(597, 304);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(47, 17);
             this.label23.TabIndex = 31;
             this.label23.Text = "Monto";
             // 
-            // bicisGrid
+            // txtDesc
             // 
-            this.bicisGrid.BackgroundColor = System.Drawing.Color.FloralWhite;
-            this.bicisGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bicisGrid.Location = new System.Drawing.Point(12, 333);
-            this.bicisGrid.Name = "bicisGrid";
-            this.bicisGrid.Size = new System.Drawing.Size(776, 114);
-            this.bicisGrid.TabIndex = 32;
+            this.txtDesc.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtDesc.Location = new System.Drawing.Point(12, 333);
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(341, 20);
+            this.txtDesc.TabIndex = 32;
+            // 
+            // txtCant
+            // 
+            this.txtCant.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtCant.Location = new System.Drawing.Point(373, 333);
+            this.txtCant.Name = "txtCant";
+            this.txtCant.Size = new System.Drawing.Size(85, 20);
+            this.txtCant.TabIndex = 33;
+            // 
+            // txtPrec
+            // 
+            this.txtPrec.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtPrec.Location = new System.Drawing.Point(466, 333);
+            this.txtPrec.Name = "txtPrec";
+            this.txtPrec.Size = new System.Drawing.Size(113, 20);
+            this.txtPrec.TabIndex = 34;
+            // 
+            // txtMont
+            // 
+            this.txtMont.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtMont.Location = new System.Drawing.Point(585, 333);
+            this.txtMont.Name = "txtMont";
+            this.txtMont.Size = new System.Drawing.Size(101, 20);
+            this.txtMont.TabIndex = 35;
+            // 
+            // detallesGrid
+            // 
+            this.detallesGrid.BackgroundColor = System.Drawing.Color.Ivory;
+            this.detallesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.detallesGrid.Location = new System.Drawing.Point(12, 359);
+            this.detallesGrid.Name = "detallesGrid";
+            this.detallesGrid.RowHeadersWidth = 51;
+            this.detallesGrid.Size = new System.Drawing.Size(776, 89);
+            this.detallesGrid.TabIndex = 36;
+            // 
+            // btnDetalles
+            // 
+            this.btnDetalles.BackColor = System.Drawing.Color.Honeydew;
+            this.btnDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnDetalles.Location = new System.Drawing.Point(692, 304);
+            this.btnDetalles.Name = "btnDetalles";
+            this.btnDetalles.Size = new System.Drawing.Size(82, 49);
+            this.btnDetalles.TabIndex = 37;
+            this.btnDetalles.Text = "Agregar";
+            this.btnDetalles.UseVisualStyleBackColor = false;
+            this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
             // 
             // Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bicisGrid);
+            this.Controls.Add(this.btnDetalles);
+            this.Controls.Add(this.detallesGrid);
+            this.Controls.Add(this.txtMont);
+            this.Controls.Add(this.txtPrec);
+            this.Controls.Add(this.txtCant);
+            this.Controls.Add(this.txtDesc);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
@@ -429,7 +485,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Facturacion";
             this.Text = "Form3";
-            ((System.ComponentModel.ISupportInitialize)(this.bicisGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detallesGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,6 +525,11 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.DataGridView bicisGrid;
+        private System.Windows.Forms.TextBox txtDesc;
+        private System.Windows.Forms.TextBox txtCant;
+        private System.Windows.Forms.TextBox txtPrec;
+        private System.Windows.Forms.TextBox txtMont;
+        private System.Windows.Forms.DataGridView detallesGrid;
+        private System.Windows.Forms.Button btnDetalles;
     }
 }
