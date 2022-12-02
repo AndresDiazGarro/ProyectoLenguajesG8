@@ -40,3 +40,4 @@ C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\Proyec
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Taller.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.AgregarBici.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Facturacion.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.EliminarBici.resources

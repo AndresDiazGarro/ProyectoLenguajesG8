@@ -182,5 +182,12 @@ namespace ProyectoLenguajes
             formulario2.Show();
             this.Hide();
         }
+
+        private void buttonFactura_Click(object sender, EventArgs e)
+        {
+            Facturacion fact = new Facturacion();
+            fact.Show();
+            this.Hide();
+        }
     }
 }

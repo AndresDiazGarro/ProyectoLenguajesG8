@@ -59,6 +59,12 @@
     <Compile Include="AgregarBici.Designer.cs">
       <DependentUpon>AgregarBici.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarBici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarBici.Designer.cs">
+      <DependentUpon>EliminarBici.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AgregarBici.resx">
       <DependentUpon>AgregarBici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarBici.resx">
+      <DependentUpon>EliminarBici.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Facturacion.resx">
       <DependentUpon>Facturacion.cs</DependentUpon>

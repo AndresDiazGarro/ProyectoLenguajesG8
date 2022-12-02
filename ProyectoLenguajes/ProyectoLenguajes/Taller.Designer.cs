@@ -70,9 +70,10 @@
             this.panel4.Controls.Add(this.buttonInsertar);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.dataGridViewTaller);
-            this.panel4.Location = new System.Drawing.Point(15, 380);
+            this.panel4.Location = new System.Drawing.Point(20, 468);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(917, 245);
+            this.panel4.Size = new System.Drawing.Size(1223, 302);
             this.panel4.TabIndex = 11;
             // 
             // buttonInsertar
@@ -81,9 +82,10 @@
             this.buttonInsertar.BackColor = System.Drawing.Color.Snow;
             this.buttonInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonInsertar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInsertar.Location = new System.Drawing.Point(79, 44);
+            this.buttonInsertar.Location = new System.Drawing.Point(105, 54);
+            this.buttonInsertar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonInsertar.Name = "buttonInsertar";
-            this.buttonInsertar.Size = new System.Drawing.Size(94, 28);
+            this.buttonInsertar.Size = new System.Drawing.Size(125, 34);
             this.buttonInsertar.TabIndex = 7;
             this.buttonInsertar.Text = "Insertar";
             this.buttonInsertar.UseVisualStyleBackColor = false;
@@ -94,9 +96,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.Snow;
             this.label3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Location = new System.Drawing.Point(4, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(911, 30);
+            this.label3.Size = new System.Drawing.Size(1215, 37);
             this.label3.TabIndex = 5;
             this.label3.Text = "Ingresar Bicicletas al Talller";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -120,70 +123,96 @@
             this.OBSERVACIONES_MECANICO,
             this.MECANICO_REVISION,
             this.PRECIO_REVISION});
-            this.dataGridViewTaller.Location = new System.Drawing.Point(-3, 91);
+            this.dataGridViewTaller.Location = new System.Drawing.Point(-4, 112);
+            this.dataGridViewTaller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewTaller.Name = "dataGridViewTaller";
-            this.dataGridViewTaller.Size = new System.Drawing.Size(917, 154);
+            this.dataGridViewTaller.RowHeadersWidth = 51;
+            this.dataGridViewTaller.Size = new System.Drawing.Size(1223, 190);
             this.dataGridViewTaller.TabIndex = 4;
             // 
             // ID_BICICLETA
             // 
             this.ID_BICICLETA.HeaderText = "ID Bicicleta";
+            this.ID_BICICLETA.MinimumWidth = 6;
             this.ID_BICICLETA.Name = "ID_BICICLETA";
+            this.ID_BICICLETA.Width = 125;
             // 
             // NOMBRE
             // 
             this.NOMBRE.HeaderText = "Nombre";
+            this.NOMBRE.MinimumWidth = 6;
             this.NOMBRE.Name = "NOMBRE";
+            this.NOMBRE.Width = 125;
             // 
             // NOMBRE_FRENOS
             // 
             this.NOMBRE_FRENOS.HeaderText = "Frenos";
+            this.NOMBRE_FRENOS.MinimumWidth = 6;
             this.NOMBRE_FRENOS.Name = "NOMBRE_FRENOS";
+            this.NOMBRE_FRENOS.Width = 125;
             // 
             // NOMBRE_TRANSMISION
             // 
             this.NOMBRE_TRANSMISION.HeaderText = "Transmision";
+            this.NOMBRE_TRANSMISION.MinimumWidth = 6;
             this.NOMBRE_TRANSMISION.Name = "NOMBRE_TRANSMISION";
+            this.NOMBRE_TRANSMISION.Width = 125;
             // 
             // NOMBRE_SUSP
             // 
             this.NOMBRE_SUSP.HeaderText = "Suspencion";
+            this.NOMBRE_SUSP.MinimumWidth = 6;
             this.NOMBRE_SUSP.Name = "NOMBRE_SUSP";
+            this.NOMBRE_SUSP.Width = 125;
             // 
             // NOMBRE_RUEDAS
             // 
             this.NOMBRE_RUEDAS.HeaderText = "Ruedas";
+            this.NOMBRE_RUEDAS.MinimumWidth = 6;
             this.NOMBRE_RUEDAS.Name = "NOMBRE_RUEDAS";
+            this.NOMBRE_RUEDAS.Width = 125;
             // 
             // NOMBRE_MARCO
             // 
             this.NOMBRE_MARCO.HeaderText = "Marco";
+            this.NOMBRE_MARCO.MinimumWidth = 6;
             this.NOMBRE_MARCO.Name = "NOMBRE_MARCO";
+            this.NOMBRE_MARCO.Width = 125;
             // 
             // NOMBRE_MARCA
             // 
             this.NOMBRE_MARCA.HeaderText = "Marca";
+            this.NOMBRE_MARCA.MinimumWidth = 6;
             this.NOMBRE_MARCA.Name = "NOMBRE_MARCA";
+            this.NOMBRE_MARCA.Width = 125;
             // 
             // PROBLEMAS_REPORTADOS
             // 
             this.PROBLEMAS_REPORTADOS.HeaderText = "Problemas Reportados Cliente";
+            this.PROBLEMAS_REPORTADOS.MinimumWidth = 6;
             this.PROBLEMAS_REPORTADOS.Name = "PROBLEMAS_REPORTADOS";
+            this.PROBLEMAS_REPORTADOS.Width = 125;
             // 
             // OBSERVACIONES_MECANICO
             // 
             this.OBSERVACIONES_MECANICO.HeaderText = "Observaciones del Mecanico";
+            this.OBSERVACIONES_MECANICO.MinimumWidth = 6;
             this.OBSERVACIONES_MECANICO.Name = "OBSERVACIONES_MECANICO";
+            this.OBSERVACIONES_MECANICO.Width = 125;
             // 
             // MECANICO_REVISION
             // 
             this.MECANICO_REVISION.HeaderText = "Nombre Mecanico";
+            this.MECANICO_REVISION.MinimumWidth = 6;
             this.MECANICO_REVISION.Name = "MECANICO_REVISION";
+            this.MECANICO_REVISION.Width = 125;
             // 
             // PRECIO_REVISION
             // 
             this.PRECIO_REVISION.HeaderText = "Precio de la Revision";
+            this.PRECIO_REVISION.MinimumWidth = 6;
             this.PRECIO_REVISION.Name = "PRECIO_REVISION";
+            this.PRECIO_REVISION.Width = 125;
             // 
             // panel3
             // 
@@ -196,9 +225,10 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.bicisGrid);
             this.panel3.Controls.Add(this.btnConsultarEnInventario);
-            this.panel3.Location = new System.Drawing.Point(12, 115);
+            this.panel3.Location = new System.Drawing.Point(16, 142);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(917, 259);
+            this.panel3.Size = new System.Drawing.Size(1223, 319);
             this.panel3.TabIndex = 10;
             // 
             // buttonFactura
@@ -207,12 +237,14 @@
             this.buttonFactura.BackColor = System.Drawing.Color.Snow;
             this.buttonFactura.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFactura.Location = new System.Drawing.Point(753, 46);
+            this.buttonFactura.Location = new System.Drawing.Point(1004, 57);
+            this.buttonFactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonFactura.Name = "buttonFactura";
-            this.buttonFactura.Size = new System.Drawing.Size(94, 28);
+            this.buttonFactura.Size = new System.Drawing.Size(125, 34);
             this.buttonFactura.TabIndex = 10;
             this.buttonFactura.Text = "Factura";
             this.buttonFactura.UseVisualStyleBackColor = false;
+            this.buttonFactura.Click += new System.EventHandler(this.buttonFactura_Click);
             // 
             // buttonEliminar
             // 
@@ -220,9 +252,10 @@
             this.buttonEliminar.BackColor = System.Drawing.Color.Snow;
             this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEliminar.Location = new System.Drawing.Point(279, 46);
+            this.buttonEliminar.Location = new System.Drawing.Point(372, 57);
+            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(94, 28);
+            this.buttonEliminar.Size = new System.Drawing.Size(125, 34);
             this.buttonEliminar.TabIndex = 9;
             this.buttonEliminar.Text = "Eliminar";
             this.buttonEliminar.UseVisualStyleBackColor = false;
@@ -233,9 +266,10 @@
             this.buttonActualizar.BackColor = System.Drawing.Color.Snow;
             this.buttonActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonActualizar.Location = new System.Drawing.Point(179, 46);
+            this.buttonActualizar.Location = new System.Drawing.Point(239, 57);
+            this.buttonActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonActualizar.Name = "buttonActualizar";
-            this.buttonActualizar.Size = new System.Drawing.Size(94, 28);
+            this.buttonActualizar.Size = new System.Drawing.Size(125, 34);
             this.buttonActualizar.TabIndex = 8;
             this.buttonActualizar.Text = "Actualizar";
             this.buttonActualizar.UseVisualStyleBackColor = false;
@@ -246,9 +280,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.BackColor = System.Drawing.Color.Snow;
             this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Location = new System.Drawing.Point(4, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(910, 30);
+            this.label2.Size = new System.Drawing.Size(1213, 37);
             this.label2.TabIndex = 5;
             this.label2.Text = "Bicicletas en Inventario";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -258,9 +293,11 @@
             this.bicisGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bicisGrid.BackgroundColor = System.Drawing.Color.DarkSlateGray;
             this.bicisGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bicisGrid.Location = new System.Drawing.Point(0, 89);
+            this.bicisGrid.Location = new System.Drawing.Point(0, 110);
+            this.bicisGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bicisGrid.Name = "bicisGrid";
-            this.bicisGrid.Size = new System.Drawing.Size(917, 154);
+            this.bicisGrid.RowHeadersWidth = 51;
+            this.bicisGrid.Size = new System.Drawing.Size(1223, 190);
             this.bicisGrid.TabIndex = 4;
             // 
             // btnConsultarEnInventario
@@ -269,9 +306,10 @@
             this.btnConsultarEnInventario.BackColor = System.Drawing.Color.Snow;
             this.btnConsultarEnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConsultarEnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarEnInventario.Location = new System.Drawing.Point(79, 46);
+            this.btnConsultarEnInventario.Location = new System.Drawing.Point(105, 57);
+            this.btnConsultarEnInventario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConsultarEnInventario.Name = "btnConsultarEnInventario";
-            this.btnConsultarEnInventario.Size = new System.Drawing.Size(94, 28);
+            this.btnConsultarEnInventario.Size = new System.Drawing.Size(125, 34);
             this.btnConsultarEnInventario.TabIndex = 3;
             this.btnConsultarEnInventario.Text = "Consultar";
             this.btnConsultarEnInventario.UseVisualStyleBackColor = false;
@@ -283,9 +321,10 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.btnRegresar);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(12, 19);
+            this.panel2.Location = new System.Drawing.Point(16, 23);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(917, 90);
+            this.panel2.Size = new System.Drawing.Size(1223, 111);
             this.panel2.TabIndex = 9;
             // 
             // btnRegresar
@@ -293,9 +332,10 @@
             this.btnRegresar.BackColor = System.Drawing.Color.Tan;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(787, 3);
+            this.btnRegresar.Location = new System.Drawing.Point(1049, 4);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(126, 57);
+            this.btnRegresar.Size = new System.Drawing.Size(168, 70);
             this.btnRegresar.TabIndex = 9;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -306,22 +346,24 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Snow;
             this.label1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-4, 0);
+            this.label1.Location = new System.Drawing.Point(-5, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 35);
+            this.label1.Size = new System.Drawing.Size(140, 43);
             this.label1.TabIndex = 1;
             this.label1.Text = "Taller";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Taller
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
-            this.ClientSize = new System.Drawing.Size(945, 645);
+            this.ClientSize = new System.Drawing.Size(1260, 794);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Taller";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Taller";

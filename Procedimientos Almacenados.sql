@@ -142,3 +142,12 @@ AS
   OPEN detalle FOR SELECT *
  FROM DetalleFactura;
 END;
+
+----------------------------------------------------------------------------------------------------
+--PROCEDIMIENTO ALMACENADO PARA ELIMINAR BICIS
+create or replace PROCEDURE ELIMINAR_BICI(DEL_BICICLETA IN BICICLETAS.ID_BICICLETA%TYPE)
+AS
+BEGIN
+ DELETE FROM BICICLETAS 
+ WHERE ID_BICICLETA=DEL_BICICLETA;
+END;

@@ -18,7 +18,7 @@ namespace ProyectoLenguajes
             InitializeComponent();
             this.usuario_activo = usuario_activo;
         }
-
+        int indexRow;
         String usuario_activo;
 
         private void btnConsultar_Click(object sender, EventArgs e)
@@ -34,26 +34,13 @@ namespace ProyectoLenguajes
             DataTable tabladeBicis = new DataTable();
             adaptador.Fill(tabladeBicis);
             bicisGrid.DataSource= tabladeBicis;
-
-
-            /*Nuevo Còdigo*/
-            DataGridViewButtonColumn buttoncolumn = new DataGridViewButtonColumn();
-            bicisGrid.Columns.Insert(9, buttoncolumn);
-            buttoncolumn.HeaderText= "Eliminar Bicicleta";
-            buttoncolumn.Width= 100;
-            buttoncolumn.Text= "ELIMINAR";
-            buttoncolumn.UseColumnTextForButtonValue= true;
-            buttoncolumn.FlatStyle= FlatStyle.Popup;
-            buttoncolumn.DefaultCellStyle.ForeColor = Color.Black;
-            buttoncolumn.DefaultCellStyle.BackColor = Color.Tan;
-            
         }
 
         private void bicisGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+    
         }
-
+        
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             Form2 formulario2 = new Form2(usuario_activo);
@@ -66,6 +53,23 @@ namespace ProyectoLenguajes
             AgregarBici AddBike = new AgregarBici();
             AddBike.Show();
             this.Hide();
+        }
+
+        private void btnDelBike_Click(object sender, EventArgs e)
+        {
+            EliminarBici DelBike = new EliminarBici();
+            DelBike.Show();
+            this.Hide();
+        }
+
+        private void btn_Actualizar_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void bicisGrid_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
