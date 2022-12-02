@@ -34,6 +34,19 @@ namespace ProyectoLenguajes
             DataTable tabladeBicis = new DataTable();
             adaptador.Fill(tabladeBicis);
             bicisGrid.DataSource= tabladeBicis;
+
+
+            /*Nuevo Còdigo*/
+            DataGridViewButtonColumn buttoncolumn = new DataGridViewButtonColumn();
+            bicisGrid.Columns.Insert(9, buttoncolumn);
+            buttoncolumn.HeaderText= "Eliminar Bicicleta";
+            buttoncolumn.Width= 100;
+            buttoncolumn.Text= "ELIMINAR";
+            buttoncolumn.UseColumnTextForButtonValue= true;
+            buttoncolumn.FlatStyle= FlatStyle.Popup;
+            buttoncolumn.DefaultCellStyle.ForeColor = Color.Black;
+            buttoncolumn.DefaultCellStyle.BackColor = Color.Tan;
+            
         }
 
         private void bicisGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)

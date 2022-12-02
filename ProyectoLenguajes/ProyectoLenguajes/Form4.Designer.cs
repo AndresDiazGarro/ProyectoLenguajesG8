@@ -40,9 +40,10 @@
             this.btnConsultar.BackColor = System.Drawing.Color.Tan;
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.Location = new System.Drawing.Point(12, 20);
+            this.btnConsultar.Location = new System.Drawing.Point(16, 25);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(126, 57);
+            this.btnConsultar.Size = new System.Drawing.Size(168, 70);
             this.btnConsultar.TabIndex = 0;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
@@ -52,9 +53,11 @@
             // 
             this.bicisGrid.BackgroundColor = System.Drawing.Color.DarkOliveGreen;
             this.bicisGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bicisGrid.Location = new System.Drawing.Point(13, 95);
+            this.bicisGrid.Location = new System.Drawing.Point(17, 117);
+            this.bicisGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bicisGrid.Name = "bicisGrid";
-            this.bicisGrid.Size = new System.Drawing.Size(943, 499);
+            this.bicisGrid.RowHeadersWidth = 51;
+            this.bicisGrid.Size = new System.Drawing.Size(1257, 614);
             this.bicisGrid.TabIndex = 1;
             this.bicisGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bicisGrid_CellContentClick);
             // 
@@ -63,9 +66,10 @@
             this.btnRegresar.BackColor = System.Drawing.Color.Tan;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(829, 20);
+            this.btnRegresar.Location = new System.Drawing.Point(1105, 25);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(126, 57);
+            this.btnRegresar.Size = new System.Drawing.Size(168, 70);
             this.btnRegresar.TabIndex = 2;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -76,9 +80,10 @@
             this.btnAddBike.BackColor = System.Drawing.Color.Tan;
             this.btnAddBike.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddBike.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddBike.Location = new System.Drawing.Point(167, 20);
+            this.btnAddBike.Location = new System.Drawing.Point(223, 25);
+            this.btnAddBike.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddBike.Name = "btnAddBike";
-            this.btnAddBike.Size = new System.Drawing.Size(126, 58);
+            this.btnAddBike.Size = new System.Drawing.Size(168, 71);
             this.btnAddBike.TabIndex = 3;
             this.btnAddBike.Text = "Agregar Bicicleta";
             this.btnAddBike.UseVisualStyleBackColor = false;
@@ -86,15 +91,16 @@
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
-            this.ClientSize = new System.Drawing.Size(969, 614);
+            this.ClientSize = new System.Drawing.Size(1289, 746);
             this.Controls.Add(this.btnAddBike);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.bicisGrid);
             this.Controls.Add(this.btnConsultar);
-            this.MaximumSize = new System.Drawing.Size(985, 653);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(1307, 900);
             this.Name = "Form4";
             this.Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)(this.bicisGrid)).EndInit();
