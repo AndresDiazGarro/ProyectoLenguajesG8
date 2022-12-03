@@ -115,6 +115,7 @@
             this.btnTaller.TabIndex = 3;
             this.btnTaller.Text = "Taller";
             this.btnTaller.UseVisualStyleBackColor = true;
+            this.btnTaller.Click += new System.EventHandler(this.btnTaller_Click);
             // 
             // btnBicicletas
             // 

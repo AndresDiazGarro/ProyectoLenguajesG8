@@ -70,10 +70,9 @@
             this.panel4.Controls.Add(this.buttonInsertar);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.dataGridViewTaller);
-            this.panel4.Location = new System.Drawing.Point(20, 468);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(15, 380);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1223, 302);
+            this.panel4.Size = new System.Drawing.Size(917, 245);
             this.panel4.TabIndex = 11;
             // 
             // buttonInsertar
@@ -82,13 +81,13 @@
             this.buttonInsertar.BackColor = System.Drawing.Color.Snow;
             this.buttonInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonInsertar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInsertar.Location = new System.Drawing.Point(105, 54);
-            this.buttonInsertar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonInsertar.Location = new System.Drawing.Point(79, 44);
             this.buttonInsertar.Name = "buttonInsertar";
-            this.buttonInsertar.Size = new System.Drawing.Size(125, 34);
+            this.buttonInsertar.Size = new System.Drawing.Size(94, 28);
             this.buttonInsertar.TabIndex = 7;
             this.buttonInsertar.Text = "Insertar";
             this.buttonInsertar.UseVisualStyleBackColor = false;
+            this.buttonInsertar.Click += new System.EventHandler(this.buttonInsertar_Click);
             // 
             // label3
             // 
@@ -96,10 +95,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.Snow;
             this.label3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1215, 37);
+            this.label3.Size = new System.Drawing.Size(911, 30);
             this.label3.TabIndex = 5;
             this.label3.Text = "Ingresar Bicicletas al Talller";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,11 +121,10 @@
             this.OBSERVACIONES_MECANICO,
             this.MECANICO_REVISION,
             this.PRECIO_REVISION});
-            this.dataGridViewTaller.Location = new System.Drawing.Point(-4, 112);
-            this.dataGridViewTaller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewTaller.Location = new System.Drawing.Point(-3, 91);
             this.dataGridViewTaller.Name = "dataGridViewTaller";
             this.dataGridViewTaller.RowHeadersWidth = 51;
-            this.dataGridViewTaller.Size = new System.Drawing.Size(1223, 190);
+            this.dataGridViewTaller.Size = new System.Drawing.Size(917, 154);
             this.dataGridViewTaller.TabIndex = 4;
             // 
             // ID_BICICLETA
@@ -225,10 +222,9 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.bicisGrid);
             this.panel3.Controls.Add(this.btnConsultarEnInventario);
-            this.panel3.Location = new System.Drawing.Point(16, 142);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(12, 115);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1223, 319);
+            this.panel3.Size = new System.Drawing.Size(917, 259);
             this.panel3.TabIndex = 10;
             // 
             // buttonFactura
@@ -237,10 +233,9 @@
             this.buttonFactura.BackColor = System.Drawing.Color.Snow;
             this.buttonFactura.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFactura.Location = new System.Drawing.Point(1004, 57);
-            this.buttonFactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonFactura.Location = new System.Drawing.Point(753, 46);
             this.buttonFactura.Name = "buttonFactura";
-            this.buttonFactura.Size = new System.Drawing.Size(125, 34);
+            this.buttonFactura.Size = new System.Drawing.Size(94, 28);
             this.buttonFactura.TabIndex = 10;
             this.buttonFactura.Text = "Factura";
             this.buttonFactura.UseVisualStyleBackColor = false;
@@ -252,13 +247,13 @@
             this.buttonEliminar.BackColor = System.Drawing.Color.Snow;
             this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEliminar.Location = new System.Drawing.Point(372, 57);
-            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonEliminar.Location = new System.Drawing.Point(279, 46);
             this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(125, 34);
+            this.buttonEliminar.Size = new System.Drawing.Size(94, 28);
             this.buttonEliminar.TabIndex = 9;
             this.buttonEliminar.Text = "Eliminar";
             this.buttonEliminar.UseVisualStyleBackColor = false;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
             // buttonActualizar
             // 
@@ -266,13 +261,13 @@
             this.buttonActualizar.BackColor = System.Drawing.Color.Snow;
             this.buttonActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonActualizar.Location = new System.Drawing.Point(239, 57);
-            this.buttonActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonActualizar.Location = new System.Drawing.Point(179, 46);
             this.buttonActualizar.Name = "buttonActualizar";
-            this.buttonActualizar.Size = new System.Drawing.Size(125, 34);
+            this.buttonActualizar.Size = new System.Drawing.Size(94, 28);
             this.buttonActualizar.TabIndex = 8;
             this.buttonActualizar.Text = "Actualizar";
             this.buttonActualizar.UseVisualStyleBackColor = false;
+            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
             // 
             // label2
             // 
@@ -280,10 +275,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.BackColor = System.Drawing.Color.Snow;
             this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1213, 37);
+            this.label2.Size = new System.Drawing.Size(910, 30);
             this.label2.TabIndex = 5;
             this.label2.Text = "Bicicletas en Inventario";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -293,11 +287,10 @@
             this.bicisGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bicisGrid.BackgroundColor = System.Drawing.Color.DarkSlateGray;
             this.bicisGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bicisGrid.Location = new System.Drawing.Point(0, 110);
-            this.bicisGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bicisGrid.Location = new System.Drawing.Point(0, 89);
             this.bicisGrid.Name = "bicisGrid";
             this.bicisGrid.RowHeadersWidth = 51;
-            this.bicisGrid.Size = new System.Drawing.Size(1223, 190);
+            this.bicisGrid.Size = new System.Drawing.Size(917, 154);
             this.bicisGrid.TabIndex = 4;
             // 
             // btnConsultarEnInventario
@@ -306,13 +299,13 @@
             this.btnConsultarEnInventario.BackColor = System.Drawing.Color.Snow;
             this.btnConsultarEnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConsultarEnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarEnInventario.Location = new System.Drawing.Point(105, 57);
-            this.btnConsultarEnInventario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConsultarEnInventario.Location = new System.Drawing.Point(79, 46);
             this.btnConsultarEnInventario.Name = "btnConsultarEnInventario";
-            this.btnConsultarEnInventario.Size = new System.Drawing.Size(125, 34);
+            this.btnConsultarEnInventario.Size = new System.Drawing.Size(94, 28);
             this.btnConsultarEnInventario.TabIndex = 3;
             this.btnConsultarEnInventario.Text = "Consultar";
             this.btnConsultarEnInventario.UseVisualStyleBackColor = false;
+            this.btnConsultarEnInventario.Click += new System.EventHandler(this.btnConsultarEnInventario_Click);
             // 
             // panel2
             // 
@@ -321,10 +314,9 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.btnRegresar);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(16, 23);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(12, 19);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1223, 111);
+            this.panel2.Size = new System.Drawing.Size(917, 90);
             this.panel2.TabIndex = 9;
             // 
             // btnRegresar
@@ -332,13 +324,13 @@
             this.btnRegresar.BackColor = System.Drawing.Color.Tan;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(1049, 4);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegresar.Location = new System.Drawing.Point(787, 3);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(168, 70);
+            this.btnRegresar.Size = new System.Drawing.Size(126, 57);
             this.btnRegresar.TabIndex = 9;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // label1
             // 
@@ -346,24 +338,22 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Snow;
             this.label1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-5, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(-4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 43);
+            this.label1.Size = new System.Drawing.Size(105, 35);
             this.label1.TabIndex = 1;
             this.label1.Text = "Taller";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Taller
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
-            this.ClientSize = new System.Drawing.Size(1260, 794);
+            this.ClientSize = new System.Drawing.Size(945, 645);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Taller";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Taller";

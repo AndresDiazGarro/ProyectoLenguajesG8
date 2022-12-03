@@ -107,6 +107,12 @@
     <Compile Include="Taller.Designer.cs">
       <DependentUpon>Taller.cs</DependentUpon>
     </Compile>
+    <Compile Include="TallerCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TallerCliente.Designer.cs">
+      <DependentUpon>TallerCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ubicacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Taller.resx">
       <DependentUpon>Taller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TallerCliente.resx">
+      <DependentUpon>TallerCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ubicacion.resx">
       <DependentUpon>Ubicacion.cs</DependentUpon>

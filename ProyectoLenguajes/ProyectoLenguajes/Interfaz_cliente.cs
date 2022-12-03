@@ -26,5 +26,12 @@ namespace ProyectoLenguajes
             perfil.Show();
             this.Hide();
         }
+
+        private void btnTaller_Click(object sender, EventArgs e)
+        {
+            TallerCliente taller = new TallerCliente(usuario_activo);
+            taller.Show();
+            this.Hide();
+        }
     }
 }
