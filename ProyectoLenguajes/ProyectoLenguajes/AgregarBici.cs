@@ -15,11 +15,12 @@ namespace ProyectoLenguajes
     {
         OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
 
-        public AgregarBici()
+        public AgregarBici(string usuario_activo)
         {
             InitializeComponent();
+            this.usuario_activo = usuario_activo;
         }
-
+        string usuario_activo;
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -60,8 +61,7 @@ namespace ProyectoLenguajes
                     comando2.ExecuteNonQuery();
                     MessageBox.Show("Bicicleta agregada con éxito");
 
-                string usuario_activo = null;
-                Form4 f4 = new Form4(usuario_activo);
+                    Form4 f4 = new Form4(usuario_activo);
                     f4.Show();
                     this.Hide();
                 }
@@ -75,7 +75,6 @@ namespace ProyectoLenguajes
 
         private void btn_regresarform4_Click(object sender, EventArgs e)
         {
-            string usuario_activo = null;
             Form4 formulario4 = new Form4(usuario_activo);
             formulario4.Show();
             this.Hide();

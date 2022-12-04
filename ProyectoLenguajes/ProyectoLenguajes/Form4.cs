@@ -50,14 +50,14 @@ namespace ProyectoLenguajes
 
         private void btnAddBike_Click(object sender, EventArgs e)
         {
-            AgregarBici AddBike = new AgregarBici();
+            AgregarBici AddBike = new AgregarBici(usuario_activo);
             AddBike.Show();
             this.Hide();
         }
 
         private void btnDelBike_Click(object sender, EventArgs e)
         {
-            EliminarBici DelBike = new EliminarBici();
+            EliminarBici DelBike = new EliminarBici(usuario_activo);
             DelBike.Show();
             this.Hide();
         }

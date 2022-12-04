@@ -14,11 +14,12 @@ namespace ProyectoLenguajes
     public partial class EliminarBici : Form
     {
         OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
-        public EliminarBici()
+        public EliminarBici(string usuario_activo)
         {
             InitializeComponent();
+            this.usuario_activo = usuario_activo;
         }
-
+        string usuario_activo;
         private void btn_AgregarBici_Click(object sender, EventArgs e)
         {
             try
@@ -31,7 +32,6 @@ namespace ProyectoLenguajes
                 comando2.ExecuteNonQuery();
                 MessageBox.Show("Bicicleta eliminada con éxito");
 
-                string usuario_activo = null;
                 Form4 f4 = new Form4(usuario_activo);
                 f4.Show();
                 this.Hide();
