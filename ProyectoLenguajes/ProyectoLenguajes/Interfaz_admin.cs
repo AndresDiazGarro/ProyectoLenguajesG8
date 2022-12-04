@@ -17,11 +17,6 @@ namespace ProyectoLenguajes
             InitializeComponent();
             this.usuario_activo = usuario_activo;
         }
-
-        public Interfaz_admin()
-        {
-        }
-
         String usuario_activo;
 
         private void btnBicicletas_Click(object sender, EventArgs e)
@@ -56,6 +51,13 @@ namespace ProyectoLenguajes
         {
             SobreNosotros SN = new SobreNosotros(usuario_activo);
             SN.Show();
+            this.Hide();
+        }
+
+        private void btn_Audits_Click(object sender, EventArgs e)
+        {
+            Auditorias aud = new Auditorias(usuario_activo);
+            aud.Show();
             this.Hide();
         }
     }

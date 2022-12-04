@@ -12,9 +12,24 @@ namespace ProyectoLenguajes
 {
     public partial class Auditorias : Form
     {
-        public Auditorias()
+        public Auditorias(string usuario_activo)
         {
             InitializeComponent();
+            this.usuario_activo = usuario_activo;
+        }
+        string usuario_activo;
+        private void btn2_regresarform4_Click(object sender, EventArgs e)
+        {
+            Interfaz_admin interf_admin = new Interfaz_admin(usuario_activo);
+            interf_admin.Show();
+            this.Hide();
+        }
+
+        private void btn_AuditBike_Click(object sender, EventArgs e)
+        {
+            Auditoria_Bici auditsBici = new Auditoria_Bici(usuario_activo);
+            auditsBici.Show();
+            this.Hide();
         }
     }
 }

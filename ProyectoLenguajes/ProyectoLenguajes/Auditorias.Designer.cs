@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_AuditUsers = new System.Windows.Forms.Button();
+            this.btn_AuditTaller = new System.Windows.Forms.Button();
             this.btn_AuditBike = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.btn_AuditTaller = new System.Windows.Forms.Button();
-            this.btn_AuditUsers = new System.Windows.Forms.Button();
             this.btn2_regresarform4 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +50,34 @@
             this.panel2.Size = new System.Drawing.Size(668, 371);
             this.panel2.TabIndex = 2;
             // 
+            // btn_AuditUsers
+            // 
+            this.btn_AuditUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btn_AuditUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_AuditUsers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_AuditUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AuditUsers.Location = new System.Drawing.Point(509, 192);
+            this.btn_AuditUsers.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AuditUsers.Name = "btn_AuditUsers";
+            this.btn_AuditUsers.Size = new System.Drawing.Size(120, 46);
+            this.btn_AuditUsers.TabIndex = 21;
+            this.btn_AuditUsers.Text = "Usuarios";
+            this.btn_AuditUsers.UseVisualStyleBackColor = false;
+            // 
+            // btn_AuditTaller
+            // 
+            this.btn_AuditTaller.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btn_AuditTaller.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_AuditTaller.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_AuditTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AuditTaller.Location = new System.Drawing.Point(272, 192);
+            this.btn_AuditTaller.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AuditTaller.Name = "btn_AuditTaller";
+            this.btn_AuditTaller.Size = new System.Drawing.Size(120, 46);
+            this.btn_AuditTaller.TabIndex = 20;
+            this.btn_AuditTaller.Text = "Taller";
+            this.btn_AuditTaller.UseVisualStyleBackColor = false;
+            // 
             // btn_AuditBike
             // 
             this.btn_AuditBike.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
@@ -63,6 +91,7 @@
             this.btn_AuditBike.TabIndex = 19;
             this.btn_AuditBike.Text = "Bicicletas";
             this.btn_AuditBike.UseVisualStyleBackColor = false;
+            this.btn_AuditBike.Click += new System.EventHandler(this.btn_AuditBike_Click);
             // 
             // label10
             // 
@@ -79,34 +108,6 @@
             this.label10.Text = "Auditorias";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btn_AuditTaller
-            // 
-            this.btn_AuditTaller.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_AuditTaller.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_AuditTaller.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_AuditTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AuditTaller.Location = new System.Drawing.Point(272, 192);
-            this.btn_AuditTaller.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_AuditTaller.Name = "btn_AuditTaller";
-            this.btn_AuditTaller.Size = new System.Drawing.Size(120, 46);
-            this.btn_AuditTaller.TabIndex = 20;
-            this.btn_AuditTaller.Text = "Taller";
-            this.btn_AuditTaller.UseVisualStyleBackColor = false;
-            // 
-            // btn_AuditUsers
-            // 
-            this.btn_AuditUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_AuditUsers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_AuditUsers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_AuditUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AuditUsers.Location = new System.Drawing.Point(509, 192);
-            this.btn_AuditUsers.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_AuditUsers.Name = "btn_AuditUsers";
-            this.btn_AuditUsers.Size = new System.Drawing.Size(120, 46);
-            this.btn_AuditUsers.TabIndex = 21;
-            this.btn_AuditUsers.Text = "Usuarios";
-            this.btn_AuditUsers.UseVisualStyleBackColor = false;
-            // 
             // btn2_regresarform4
             // 
             this.btn2_regresarform4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
@@ -120,6 +121,7 @@
             this.btn2_regresarform4.TabIndex = 22;
             this.btn2_regresarform4.Text = "REGRESAR";
             this.btn2_regresarform4.UseVisualStyleBackColor = false;
+            this.btn2_regresarform4.Click += new System.EventHandler(this.btn2_regresarform4_Click);
             // 
             // Auditorias
             // 
