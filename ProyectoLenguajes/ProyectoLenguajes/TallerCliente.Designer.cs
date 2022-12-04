@@ -122,6 +122,7 @@
             this.buttonFactura.TabIndex = 10;
             this.buttonFactura.Text = "Factura";
             this.buttonFactura.UseVisualStyleBackColor = false;
+            this.buttonFactura.Click += new System.EventHandler(this.buttonFactura_Click);
             // 
             // buttonEliminar
             // 

@@ -11,12 +11,16 @@ using System.Windows.Forms;
 
 namespace ProyectoLenguajes
 {
-    public partial class Facturacion : Form
+    public partial class FacturacionAdmin : Form
     {
-        public Facturacion()
+        OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
+
+        public FacturacionAdmin(String usuario_activo)
         {
             InitializeComponent();
+            this.usuario_activo = usuario_activo;
         }
+        String usuario_activo;
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -75,6 +79,13 @@ namespace ProyectoLenguajes
             DataTable detalleFactura = new DataTable();
             adaptador.Fill(detalleFactura);
             detallesGrid.DataSource = detalleFactura;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Interfaz_admin formulario2 = new Interfaz_admin(usuario_activo);
+            formulario2.Show();
+            this.Hide();
         }
     }
 }

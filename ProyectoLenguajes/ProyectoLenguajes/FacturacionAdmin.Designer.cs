@@ -1,6 +1,6 @@
 ﻿namespace ProyectoLenguajes
 {
-    partial class Facturacion
+    partial class FacturacionAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -66,6 +66,7 @@
             this.txtMont = new System.Windows.Forms.TextBox();
             this.detallesGrid = new System.Windows.Forms.DataGridView();
             this.btnDetalles = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.detallesGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,7 +118,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
-            this.label5.Location = new System.Drawing.Point(593, 9);
+            this.label5.Location = new System.Drawing.Point(497, 3);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(180, 39);
             this.label5.TabIndex = 4;
@@ -432,19 +433,33 @@
             this.btnDetalles.BackColor = System.Drawing.Color.Honeydew;
             this.btnDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnDetalles.Location = new System.Drawing.Point(692, 304);
+            this.btnDetalles.Location = new System.Drawing.Point(692, 315);
             this.btnDetalles.Name = "btnDetalles";
-            this.btnDetalles.Size = new System.Drawing.Size(82, 49);
+            this.btnDetalles.Size = new System.Drawing.Size(82, 38);
             this.btnDetalles.TabIndex = 37;
             this.btnDetalles.Text = "Agregar";
             this.btnDetalles.UseVisualStyleBackColor = false;
             this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
             // 
-            // Facturacion
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Honeydew;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Location = new System.Drawing.Point(706, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 34);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "Regresar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // FacturacionAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDetalles);
             this.Controls.Add(this.detallesGrid);
             this.Controls.Add(this.txtMont);
@@ -483,7 +498,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Facturacion";
+            this.Name = "FacturacionAdmin";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.detallesGrid)).EndInit();
             this.ResumeLayout(false);
@@ -531,5 +546,6 @@
         private System.Windows.Forms.TextBox txtMont;
         private System.Windows.Forms.DataGridView detallesGrid;
         private System.Windows.Forms.Button btnDetalles;
+        private System.Windows.Forms.Button button1;
     }
 }
