@@ -89,17 +89,11 @@
     <Compile Include="Crear_Cuenta.Designer.cs">
       <DependentUpon>Crear_Cuenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="FacturacionAdmin.cs">
+    <Compile Include="Facturacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FacturacionAdmin.Designer.cs">
-      <DependentUpon>FacturacionAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FacturacionCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FacturacionCliente.Designer.cs">
-      <DependentUpon>FacturacionCliente.cs</DependentUpon>
+    <Compile Include="Facturacion.Designer.cs">
+      <DependentUpon>Facturacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaz_cliente.cs">
       <SubType>Form</SubType>
@@ -154,8 +148,8 @@
     <EmbeddedResource Include="EliminarBici.resx">
       <DependentUpon>EliminarBici.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FacturacionAdmin.resx">
-      <DependentUpon>FacturacionAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="Facturacion.resx">
+      <DependentUpon>Facturacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -166,13 +160,8 @@
     <EmbeddedResource Include="Crear_Cuenta.resx">
       <DependentUpon>Crear_Cuenta.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< Updated upstream
     <EmbeddedResource Include="Interfaz_cliente.resx">
       <DependentUpon>Interfaz_cliente.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="FacturacionCliente.resx">
-      <DependentUpon>FacturacionCliente.cs</DependentUpon>
->>>>>>> Stashed changes
     </EmbeddedResource>
     <EmbeddedResource Include="SobreNosotros.resx">
       <DependentUpon>SobreNosotros.cs</DependentUpon>

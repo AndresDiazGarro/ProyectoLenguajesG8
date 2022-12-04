@@ -185,7 +185,7 @@ namespace ProyectoLenguajes
 
         private void buttonFactura_Click(object sender, EventArgs e)
         {
-            FacturacionAdmin fact = new FacturacionAdmin();
+            Facturacion fact = new Facturacion();
             fact.Show();
             this.Hide();
         }
