@@ -42,3 +42,5 @@ C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\Proyec
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.EliminarBici.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Interfaz_admin.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Interfaz_cliente.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.TallerCliente.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.ActualizarBici.resources

@@ -69,7 +69,7 @@
             this.btnRegresar.BackColor = System.Drawing.Color.Tan;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(1105, 25);
+            this.btnRegresar.Location = new System.Drawing.Point(1094, 24);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(168, 70);
@@ -97,7 +97,7 @@
             this.btnDelBike.BackColor = System.Drawing.Color.Tan;
             this.btnDelBike.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelBike.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelBike.Location = new System.Drawing.Point(423, 24);
+            this.btnDelBike.Location = new System.Drawing.Point(622, 24);
             this.btnDelBike.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelBike.Name = "btnDelBike";
             this.btnDelBike.Size = new System.Drawing.Size(168, 71);
@@ -111,12 +111,12 @@
             this.btn_Actualizar.BackColor = System.Drawing.Color.Tan;
             this.btn_Actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Actualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Actualizar.Location = new System.Drawing.Point(623, 24);
+            this.btn_Actualizar.Location = new System.Drawing.Point(420, 24);
             this.btn_Actualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Actualizar.Name = "btn_Actualizar";
             this.btn_Actualizar.Size = new System.Drawing.Size(168, 71);
             this.btn_Actualizar.TabIndex = 5;
-            this.btn_Actualizar.Text = "Actualizar";
+            this.btn_Actualizar.Text = "Actualizar Bicicleta";
             this.btn_Actualizar.UseVisualStyleBackColor = false;
             this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click);
             // 

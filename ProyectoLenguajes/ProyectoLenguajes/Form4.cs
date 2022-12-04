@@ -64,7 +64,9 @@ namespace ProyectoLenguajes
 
         private void btn_Actualizar_Click(object sender, EventArgs e)
         {
-        
+            ActualizarBici UpdBike = new ActualizarBici();
+            UpdBike.Show();
+            this.Hide();
         }
 
         private void bicisGrid_CellClick(object sender, DataGridViewCellEventArgs e)

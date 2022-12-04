@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarBici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarBici.Designer.cs">
+      <DependentUpon>ActualizarBici.cs</DependentUpon>
+    </Compile>
     <Compile Include="AgregarBici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ActualizarBici.resx">
+      <DependentUpon>ActualizarBici.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AgregarBici.resx">
       <DependentUpon>AgregarBici.cs</DependentUpon>
     </EmbeddedResource>
