@@ -42,11 +42,7 @@ namespace ProyectoLenguajes
         }
 
         private void label2_Click(object sender, EventArgs e)
-        {/*************/
-            string usuario_activo = null;
-            Interfaz_admin int_admin = new Interfaz_admin(usuario_activo);
-            int_admin.Show();
-            this.Hide();/*****************/
+        {
         }
 
         private void button1_Click_1(object sender, EventArgs e)
