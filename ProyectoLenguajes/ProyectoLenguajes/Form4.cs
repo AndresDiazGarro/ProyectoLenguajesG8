@@ -64,7 +64,7 @@ namespace ProyectoLenguajes
 
         private void btn_Actualizar_Click(object sender, EventArgs e)
         {
-            ActualizarBici UpdBike = new ActualizarBici();
+            ActualizarBici UpdBike = new ActualizarBici(usuario_activo);
             UpdBike.Show();
             this.Hide();
         }

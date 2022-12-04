@@ -97,7 +97,7 @@
             this.btnDelBike.BackColor = System.Drawing.Color.Tan;
             this.btnDelBike.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelBike.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelBike.Location = new System.Drawing.Point(622, 24);
+            this.btnDelBike.Location = new System.Drawing.Point(618, 24);
             this.btnDelBike.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelBike.Name = "btnDelBike";
             this.btnDelBike.Size = new System.Drawing.Size(168, 71);

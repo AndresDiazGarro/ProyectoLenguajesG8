@@ -43,6 +43,7 @@ namespace ProyectoLenguajes
 
         private void label2_Click(object sender, EventArgs e)
         {
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
