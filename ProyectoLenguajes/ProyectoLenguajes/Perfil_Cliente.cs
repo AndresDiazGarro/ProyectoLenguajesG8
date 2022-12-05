@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace ProyectoLenguajes
 {
-    public partial class Perfil : Form
+    public partial class Perfil_Cliente : Form
     {
 
         OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
 
-        public Perfil(String usuario_activo)
+        public Perfil_Cliente(String usuario_activo)
         {
             InitializeComponent();
             this.usuario_activo = usuario_activo;
@@ -54,11 +54,11 @@ namespace ProyectoLenguajes
                 comando.Parameters.Add("cont", OracleType.VarChar).Value = txtContrasena.Text;
                 if (rbCliente.Checked == true)
                 {
-                    comando.Parameters.Add("rol", OracleType.VarChar).Value = "Cliente";
+                    comando.Parameters.Add("rol_nuevo", OracleType.VarChar).Value = "Cliente";
                 }
                 else if (rbAdministrador.Checked == true && txtClave.Text.Equals("admin"))
                 {
-                    comando.Parameters.Add("rol", OracleType.VarChar).Value = "Administrador";
+                    comando.Parameters.Add("rol_nuevo", OracleType.VarChar).Value = "Administrador";
                 }
                 comando.ExecuteNonQuery();
                 usuario_activo = txtUsuario.Text;
@@ -160,6 +160,18 @@ namespace ProyectoLenguajes
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegresar_Click_1(object sender, EventArgs e)
+        {
+            Interfaz_cliente int_cliente = new Interfaz_cliente(usuario_activo);
+            int_cliente.Show();
+            this.Hide();
         }
     }
 }

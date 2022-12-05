@@ -22,8 +22,8 @@ namespace ProyectoLenguajes
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
-            Perfil perfil = new Perfil(usuario_activo);
-            perfil.Show();
+            Perfil_Cliente perfil_cliente = new Perfil_Cliente(usuario_activo);
+            perfil_cliente.Show();
             this.Hide();
         }
 

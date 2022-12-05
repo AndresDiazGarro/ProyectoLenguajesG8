@@ -28,8 +28,8 @@ namespace ProyectoLenguajes
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Perfil perfil = new Perfil(usuario_activo);
-            perfil.Show();
+            Perfil_admin perfil_admin = new Perfil_admin(usuario_activo);
+            perfil_admin.Show();
             this.Hide();
         }
 
@@ -59,6 +59,11 @@ namespace ProyectoLenguajes
             Auditorias aud = new Auditorias(usuario_activo);
             aud.Show();
             this.Hide();
+        }
+
+        private void imgLogo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

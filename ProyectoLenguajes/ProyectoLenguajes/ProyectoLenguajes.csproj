@@ -95,6 +95,12 @@
     <Compile Include="FacturacionCliente.Designer.cs">
       <DependentUpon>FacturacionCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Perfil_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfil_admin.Designer.cs">
+      <DependentUpon>Perfil_admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,11 +155,11 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perfil.cs">
+    <Compile Include="Perfil_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Perfil.Designer.cs">
-      <DependentUpon>Perfil.cs</DependentUpon>
+    <Compile Include="Perfil_Cliente.Designer.cs">
+      <DependentUpon>Perfil_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfil_admin.resx">
+      <DependentUpon>Perfil_admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz_admin.resx">
       <DependentUpon>Interfaz_admin.cs</DependentUpon>
@@ -202,8 +211,8 @@
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Perfil.resx">
-      <DependentUpon>Perfil.cs</DependentUpon>
+    <EmbeddedResource Include="Perfil_Cliente.resx">
+      <DependentUpon>Perfil_Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

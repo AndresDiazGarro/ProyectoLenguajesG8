@@ -11,7 +11,6 @@ C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\Proyec
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.pdb
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Form4.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Crear_Cuenta.resources
-C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Perfil.resources
 C:\Users\danny\source\repos\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\bin\Debug\ProyectoLenguajes.exe.config
 C:\Users\danny\source\repos\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\bin\Debug\ProyectoLenguajes.exe
 C:\Users\danny\source\repos\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\bin\Debug\ProyectoLenguajes.pdb
@@ -56,3 +55,5 @@ C:\Users\danny\source\repos\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLengua
 C:\Users\danny\source\repos\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.SobreNosotros.resources
 C:\Users\danny\source\repos\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Taller.resources
 C:\Users\danny\source\repos\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.TallerCliente.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Perfil_admin.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Perfil_Cliente.resources

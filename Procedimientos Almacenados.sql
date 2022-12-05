@@ -54,13 +54,10 @@ IS
        END;
 END;
 
-select * from usuarios;
-
 CREATE OR REPLACE PACKAGE PERFIL
 IS
  PROCEDURE MOSTRAR_DATOS_USUARIO(usua_act VARCHAR2, datos_usuario OUT SYS_REFCURSOR);
- PROCEDURE ACTUALIZAR_USUARIO(usua_act VARCHAR2,  nom VARCHAR2, apell VARCHAR2, usua VARCHAR2, 
- cont VARCHAR2,rol VARCHAR2);
+ PROCEDURE ACTUALIZAR_USUARIO(usua_act VARCHAR2,  nom VARCHAR2, apell VARCHAR2, usua VARCHAR2, cont VARCHAR2, rol_nuevo VARCHAR2);
  PROCEDURE ELIMINAR_USUARIO(usua_act VARCHAR2);
 END;
 /
@@ -72,15 +69,14 @@ IS
    OPEN datos_usuario FOR SELECT * FROM USUARIOS WHERE NOM_USUARIO = usua_act;
   END;
     
-    PROCEDURE ACTUALIZAR_USUARIO(usua_act VARCHAR2, nom VARCHAR2, apell VARCHAR2, usua VARCHAR2, cont VARCHAR2,
-    rol VARCHAR2)
+    PROCEDURE ACTUALIZAR_USUARIO(usua_act VARCHAR2, nom VARCHAR2, apell VARCHAR2, usua VARCHAR2, cont VARCHAR2, rol_nuevo VARCHAR2)
     IS
      BEGIN
       UPDATE Usuarios SET NOMBRE = nom,
       APELLIDO = apell,
       NOM_USUARIO = usua,
       CONTRASENA = cont,
-      ROL = rol
+      ROL = rol_nuevo
       WHERE NOM_USUARIO = usua_act;
      END;
      
@@ -91,8 +87,6 @@ IS
       END;
   
 END;
-
-execute PERFIL.ACTUALIZAR_USUARIO('prueba', 'jose pablo', 'duran', 'prueba', '123', 'Cliente');
 
 -----------------------PROCEDIMIENTO ALMACENADO DE BICICLETAS CONSULTA---------------------
 
