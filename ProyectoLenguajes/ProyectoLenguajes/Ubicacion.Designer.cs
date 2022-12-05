@@ -29,31 +29,22 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.btnsearch = new System.Windows.Forms.Button();
             this.gMap = new GMap.NET.WindowsForms.GMapControl();
-            this.menuStrip1.SuspendLayout();
+            this.cbubicaciones = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripTextBox1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripTextBox1
-            // 
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(400, 23);
-            // 
             // btnsearch
             // 
-            this.btnsearch.Location = new System.Drawing.Point(407, 2);
+            this.btnsearch.Location = new System.Drawing.Point(713, 2);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(75, 23);
             this.btnsearch.TabIndex = 1;
@@ -88,11 +79,20 @@
             this.gMap.Zoom = 8D;
             this.gMap.Load += new System.EventHandler(this.gMap_Load);
             // 
+            // cbubicaciones
+            // 
+            this.cbubicaciones.FormattingEnabled = true;
+            this.cbubicaciones.Location = new System.Drawing.Point(0, 3);
+            this.cbubicaciones.Name = "cbubicaciones";
+            this.cbubicaciones.Size = new System.Drawing.Size(121, 21);
+            this.cbubicaciones.TabIndex = 4;
+            // 
             // Ubicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbubicaciones);
             this.Controls.Add(this.gMap);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.menuStrip1);
@@ -100,8 +100,6 @@
             this.Name = "Ubicacion";
             this.Text = "Ubicacion";
             this.Load += new System.EventHandler(this.Ubicacion_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,8 +108,8 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.Button btnsearch;
         private GMap.NET.WindowsForms.GMapControl gMap;
+        private System.Windows.Forms.ComboBox cbubicaciones;
     }
 }

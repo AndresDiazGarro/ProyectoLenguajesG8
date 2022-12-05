@@ -41,5 +41,11 @@ namespace ProyectoLenguajes
         {
 
         }
+
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+            conexion.Open();
+
+        }
     }
 }
