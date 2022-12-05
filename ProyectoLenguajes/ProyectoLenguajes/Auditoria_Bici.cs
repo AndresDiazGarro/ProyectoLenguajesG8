@@ -40,5 +40,10 @@ namespace ProyectoLenguajes
             audits.Show();
             this.Hide();
         }
+
+        private void AuditbicisGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

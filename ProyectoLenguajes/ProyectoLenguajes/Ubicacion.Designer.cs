@@ -32,6 +32,8 @@
             this.btnsearch = new System.Windows.Forms.Button();
             this.gMap = new GMap.NET.WindowsForms.GMapControl();
             this.cbubicaciones = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -60,7 +62,7 @@
             this.gMap.GrayScaleMode = false;
             this.gMap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMap.LevelsKeepInMemmory = 5;
-            this.gMap.Location = new System.Drawing.Point(0, 31);
+            this.gMap.Location = new System.Drawing.Point(0, 212);
             this.gMap.MarkersEnabled = true;
             this.gMap.MaxZoom = 8;
             this.gMap.MinZoom = 2;
@@ -74,7 +76,7 @@
             this.gMap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMap.ShowTileGridLines = false;
-            this.gMap.Size = new System.Drawing.Size(800, 420);
+            this.gMap.Size = new System.Drawing.Size(800, 239);
             this.gMap.TabIndex = 3;
             this.gMap.Zoom = 8D;
             this.gMap.Load += new System.EventHandler(this.gMap_Load);
@@ -87,11 +89,20 @@
             this.cbubicaciones.Size = new System.Drawing.Size(121, 21);
             this.cbubicaciones.TabIndex = 4;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 31);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(775, 175);
+            this.dataGridView1.TabIndex = 5;
+            // 
             // Ubicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cbubicaciones);
             this.Controls.Add(this.gMap);
             this.Controls.Add(this.btnsearch);
@@ -100,6 +111,7 @@
             this.Name = "Ubicacion";
             this.Text = "Ubicacion";
             this.Load += new System.EventHandler(this.Ubicacion_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,5 +123,6 @@
         private System.Windows.Forms.Button btnsearch;
         private GMap.NET.WindowsForms.GMapControl gMap;
         private System.Windows.Forms.ComboBox cbubicaciones;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
