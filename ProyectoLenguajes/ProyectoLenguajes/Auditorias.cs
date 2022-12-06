@@ -31,5 +31,12 @@ namespace ProyectoLenguajes
             auditsBici.Show();
             this.Hide();
         }
+
+        private void btn_AuditTaller_Click(object sender, EventArgs e)
+        {
+            Auditoria_Taller auditsBici = new Auditoria_Taller(usuario_activo);
+            auditsBici.Show();
+            this.Hide();
+        }
     }
 }

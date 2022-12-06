@@ -74,6 +74,7 @@
             this.btn_AuditTaller.TabIndex = 20;
             this.btn_AuditTaller.Text = "Taller";
             this.btn_AuditTaller.UseVisualStyleBackColor = false;
+            this.btn_AuditTaller.Click += new System.EventHandler(this.btn_AuditTaller_Click);
             // 
             // btn_AuditBike
             // 
@@ -125,7 +126,7 @@
             this.ClientSize = new System.Drawing.Size(967, 606);
             this.Controls.Add(this.btn2_regresarform4);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Auditorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Auditorias";
