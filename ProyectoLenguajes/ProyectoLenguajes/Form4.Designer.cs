@@ -128,7 +128,8 @@
             this.Controls.Add(this.btnConsultar);
             this.MaximumSize = new System.Drawing.Size(984, 739);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Bicicletas";
             ((System.ComponentModel.ISupportInitialize)(this.bicisGrid)).EndInit();
             this.ResumeLayout(false);
 

@@ -274,7 +274,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Perfil_admin";
-            this.Text = "Perfil_admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Perfil Administrador";
             this.Load += new System.EventHandler(this.Perfil_admin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -161,7 +161,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelNavbar);
             this.Name = "Interfaz_admin";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Vista Administrador";
             this.panelNavbar.ResumeLayout(false);
             this.bannerLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();

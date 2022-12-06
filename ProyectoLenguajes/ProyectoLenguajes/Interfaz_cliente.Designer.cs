@@ -156,7 +156,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelNavbar);
             this.Name = "Interfaz_cliente";
-            this.Text = "Interfaz_cliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Vista Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelNavbar.ResumeLayout(false);
             this.bannerLogo.ResumeLayout(false);
