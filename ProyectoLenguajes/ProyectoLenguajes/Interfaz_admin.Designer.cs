@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelNavbar = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_Audits = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
             this.btnUbicacion = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.bannerLogo = new System.Windows.Forms.Panel();
             this.imgLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelNavbar.SuspendLayout();
             this.bannerLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
@@ -56,30 +56,34 @@
             this.panelNavbar.Controls.Add(this.bannerLogo);
             this.panelNavbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNavbar.Location = new System.Drawing.Point(0, 0);
+            this.panelNavbar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelNavbar.Name = "panelNavbar";
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            this.panelNavbar.Size = new System.Drawing.Size(926, 73);
-=======
-            this.panelNavbar.Size = new System.Drawing.Size(1092, 73);
->>>>>>> Stashed changes
-=======
-            this.panelNavbar.Size = new System.Drawing.Size(1092, 73);
->>>>>>> Stashed changes
-=======
-            this.panelNavbar.Size = new System.Drawing.Size(1092, 73);
->>>>>>> Stashed changes
+            this.panelNavbar.Size = new System.Drawing.Size(1456, 90);
             this.panelNavbar.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1251, 11);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(201, 70);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Facturacion";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btn_Audits
             // 
             this.btn_Audits.FlatAppearance.BorderSize = 0;
             this.btn_Audits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Audits.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Audits.Location = new System.Drawing.Point(634, 9);
+            this.btn_Audits.Location = new System.Drawing.Point(845, 11);
+            this.btn_Audits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Audits.Name = "btn_Audits";
-            this.btn_Audits.Size = new System.Drawing.Size(129, 57);
+            this.btn_Audits.Size = new System.Drawing.Size(172, 70);
             this.btn_Audits.TabIndex = 7;
             this.btn_Audits.Text = "Auditorias";
             this.btn_Audits.UseVisualStyleBackColor = true;
@@ -90,9 +94,10 @@
             this.btnPerfil.FlatAppearance.BorderSize = 0;
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerfil.Location = new System.Drawing.Point(494, 9);
+            this.btnPerfil.Location = new System.Drawing.Point(659, 11);
+            this.btnPerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(129, 57);
+            this.btnPerfil.Size = new System.Drawing.Size(172, 70);
             this.btnPerfil.TabIndex = 6;
             this.btnPerfil.Text = "Perfil";
             this.btnPerfil.UseVisualStyleBackColor = true;
@@ -103,9 +108,10 @@
             this.btnUbicacion.FlatAppearance.BorderSize = 0;
             this.btnUbicacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUbicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUbicacion.Location = new System.Drawing.Point(769, 9);
+            this.btnUbicacion.Location = new System.Drawing.Point(1025, 11);
+            this.btnUbicacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUbicacion.Name = "btnUbicacion";
-            this.btnUbicacion.Size = new System.Drawing.Size(151, 57);
+            this.btnUbicacion.Size = new System.Drawing.Size(201, 70);
             this.btnUbicacion.TabIndex = 4;
             this.btnUbicacion.Text = "Ubicación";
             this.btnUbicacion.UseVisualStyleBackColor = true;
@@ -116,9 +122,10 @@
             this.btnTaller.FlatAppearance.BorderSize = 0;
             this.btnTaller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaller.Location = new System.Drawing.Point(337, 9);
+            this.btnTaller.Location = new System.Drawing.Point(449, 11);
+            this.btnTaller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTaller.Name = "btnTaller";
-            this.btnTaller.Size = new System.Drawing.Size(151, 57);
+            this.btnTaller.Size = new System.Drawing.Size(201, 70);
             this.btnTaller.TabIndex = 3;
             this.btnTaller.Text = "Taller";
             this.btnTaller.UseVisualStyleBackColor = true;
@@ -130,9 +137,10 @@
             this.btnBicicletas.FlatAppearance.BorderSize = 0;
             this.btnBicicletas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBicicletas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBicicletas.Location = new System.Drawing.Point(180, 9);
+            this.btnBicicletas.Location = new System.Drawing.Point(240, 11);
+            this.btnBicicletas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBicicletas.Name = "btnBicicletas";
-            this.btnBicicletas.Size = new System.Drawing.Size(151, 57);
+            this.btnBicicletas.Size = new System.Drawing.Size(201, 70);
             this.btnBicicletas.TabIndex = 2;
             this.btnBicicletas.Text = "Bicicletas";
             this.btnBicicletas.UseVisualStyleBackColor = false;
@@ -143,17 +151,19 @@
             this.bannerLogo.BackColor = System.Drawing.Color.SkyBlue;
             this.bannerLogo.Controls.Add(this.imgLogo);
             this.bannerLogo.Location = new System.Drawing.Point(0, 0);
+            this.bannerLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bannerLogo.Name = "bannerLogo";
-            this.bannerLogo.Size = new System.Drawing.Size(175, 73);
+            this.bannerLogo.Size = new System.Drawing.Size(233, 90);
             this.bannerLogo.TabIndex = 1;
             // 
             // imgLogo
             // 
             this.imgLogo.BackColor = System.Drawing.Color.Tan;
             this.imgLogo.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.logoBicis;
-            this.imgLogo.Location = new System.Drawing.Point(40, 4);
+            this.imgLogo.Location = new System.Drawing.Point(53, 5);
+            this.imgLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.imgLogo.Name = "imgLogo";
-            this.imgLogo.Size = new System.Drawing.Size(86, 66);
+            this.imgLogo.Size = new System.Drawing.Size(115, 81);
             this.imgLogo.TabIndex = 2;
             this.imgLogo.TabStop = false;
             this.imgLogo.Click += new System.EventHandler(this.imgLogo_Click);
@@ -161,44 +171,22 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 72);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 89);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(942, 500);
+            this.pictureBox1.Size = new System.Drawing.Size(1456, 615);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(938, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 57);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Facturacion";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // Interfaz_admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            this.ClientSize = new System.Drawing.Size(926, 568);
-=======
-            this.ClientSize = new System.Drawing.Size(1092, 568);
->>>>>>> Stashed changes
-=======
-            this.ClientSize = new System.Drawing.Size(1092, 568);
->>>>>>> Stashed changes
-=======
-            this.ClientSize = new System.Drawing.Size(1092, 568);
->>>>>>> Stashed changes
+            this.ClientSize = new System.Drawing.Size(1456, 699);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelNavbar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Interfaz_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vista Administrador";

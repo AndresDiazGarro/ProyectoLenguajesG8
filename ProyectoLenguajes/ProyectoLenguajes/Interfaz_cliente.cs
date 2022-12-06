@@ -47,5 +47,12 @@ namespace ProyectoLenguajes
             sn.Show();
             this.Hide();
         }
+
+        private void btnBicicletas_Click(object sender, EventArgs e)
+        {
+            BiciCliente BC = new BiciCliente(usuario_activo);
+            BC.Show();
+            this.Hide();
+        }
     }
 }

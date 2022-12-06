@@ -83,6 +83,12 @@
     <Compile Include="Auditoria_Taller.Designer.cs">
       <DependentUpon>Auditoria_Taller.cs</DependentUpon>
     </Compile>
+    <Compile Include="BiciCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiciCliente.Designer.cs">
+      <DependentUpon>BiciCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="EliminarBici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Auditoria_Taller.resx">
       <DependentUpon>Auditoria_Taller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiciCliente.resx">
+      <DependentUpon>BiciCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarBici.resx">
       <DependentUpon>EliminarBici.cs</DependentUpon>

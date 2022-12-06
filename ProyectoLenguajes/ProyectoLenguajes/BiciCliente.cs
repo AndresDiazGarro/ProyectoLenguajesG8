@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ProyectoLenguajes
 {
-    public partial class Auditoria_Bici : Form
+    public partial class BiciCliente : Form
     {
-        public Auditoria_Bici(String usuario_activo)
+        public BiciCliente(String usuario_activo)
         {
             InitializeComponent();
             this.usuario_activo = usuario_activo;
@@ -23,27 +23,22 @@ namespace ProyectoLenguajes
         {
             OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD =DBFide1; USER ID = system;");
             conexion.Open();
-            OracleCommand comando = new OracleCommand("seleccionarBikeAudits", conexion);
+            OracleCommand comando = new OracleCommand("seleccionarBicicletas", conexion);
             comando.CommandType = System.Data.CommandType.StoredProcedure;
-            comando.Parameters.Add("audit_bicis", OracleType.Cursor).Direction = ParameterDirection.Output;
+            comando.Parameters.Add("bicis", OracleType.Cursor).Direction = ParameterDirection.Output;
 
-            OracleDataAdapter adaptador2 = new OracleDataAdapter();
-            adaptador2.SelectCommand = comando;
+            OracleDataAdapter adaptador = new OracleDataAdapter();
+            adaptador.SelectCommand = comando;
             DataTable tabladeBicis = new DataTable();
-            adaptador2.Fill(tabladeBicis);
-            AuditbicisGrid.DataSource = tabladeBicis;
+            adaptador.Fill(tabladeBicis);
+            bicisClienteGrid.DataSource = tabladeBicis;
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Auditorias audits = new Auditorias(usuario_activo);
-            audits.Show();
+            Interfaz_cliente IntCliente = new Interfaz_cliente(usuario_activo);
+            IntCliente.Show();
             this.Hide();
-        }
-
-        private void AuditbicisGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-          
         }
     }
 }
