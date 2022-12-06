@@ -27,7 +27,7 @@ namespace ProyectoLenguajes
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Interfaz_admin formulario2 = new Interfaz_admin(usuario_activo);
+            Interfaz_cliente formulario2 = new Interfaz_cliente(usuario_activo);
             formulario2.Show();
             this.Hide();
         }

@@ -285,9 +285,8 @@ CREATE OR REPLACE PROCEDURE seleccionarCoordenadas(filas_coordenadas out sys_ref
 AS
     BEGIN
         OPEN filas_coordenadas FOR SELECT ID_SUCURSAL, NOMBRE_SUCURSAL, LATITUD, LONGITUD
-    FROM COORDENADAS 
+    FROM COORDENADAS WHERE NOMBRE_SUCURSAL = 'Heredia';
 END;
-
 
 
 
