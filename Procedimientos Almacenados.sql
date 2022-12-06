@@ -383,10 +383,27 @@ BEGIN
       VALUES (VDESCRIPCION, VCANTIDAD, VPRECIO,VMONTO,VID_FACTURA);
 END;
 
+drop trigger guarda_detalle;
+
+create or replace trigger historic_detalle
+before insert on detallefactura
+for each row
+declare
+  VDESCRIPCION DETALLEFACTURA.DESCRIPCION%TYPE;
+  VCANTIDAD DETALLEFACTURA.CANTIDAD%TYPE;
+  VPRECIO DETALLEFACTURA.PRECIO%TYPE;
+  VMONTO DETALLEFACTURA.MONTO%TYPE;
+  VID_FACTURA DETALLEFACTURA.ID_FACTURA%TYPE;
+  begin
+  select descripcion,cantidad,precio,monto,id_factura into vdescripcion,vcantidad,vprecio,vmonto,vid_factura from detallefactura;
+  where id_factura:=new.id_factura;
+  insert into historico_detalle values(vdescripcion,vcantidad,vprecio,vmonto,vid_factura);
+  end;
+
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
-INSERT INTO DETALLEFACTURA VALUES('DSD','1','2','3','456');
+INSERT INTO DETALLEFACTURA VALUES('DSD','1','2','3','4');
 
 SELECT * FROM DETALLEFACTURA;
 SELECT * FROM HISTORICO_DETALLE;
