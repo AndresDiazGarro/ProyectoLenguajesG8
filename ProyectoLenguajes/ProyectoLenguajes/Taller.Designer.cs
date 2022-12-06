@@ -45,7 +45,6 @@
             this.MECANICO_REVISION = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PRECIO_REVISION = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.buttonFactura = new System.Windows.Forms.Button();
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.buttonActualizar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -106,7 +105,7 @@
             // 
             this.dataGridViewTaller.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewTaller.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+            this.dataGridViewTaller.BackgroundColor = System.Drawing.Color.Honeydew;
             this.dataGridViewTaller.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTaller.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_BICICLETA,
@@ -216,7 +215,6 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.buttonFactura);
             this.panel3.Controls.Add(this.buttonEliminar);
             this.panel3.Controls.Add(this.buttonActualizar);
             this.panel3.Controls.Add(this.label2);
@@ -226,20 +224,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(917, 259);
             this.panel3.TabIndex = 10;
-            // 
-            // buttonFactura
-            // 
-            this.buttonFactura.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonFactura.BackColor = System.Drawing.Color.Snow;
-            this.buttonFactura.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFactura.Location = new System.Drawing.Point(753, 46);
-            this.buttonFactura.Name = "buttonFactura";
-            this.buttonFactura.Size = new System.Drawing.Size(94, 28);
-            this.buttonFactura.TabIndex = 10;
-            this.buttonFactura.Text = "Factura";
-            this.buttonFactura.UseVisualStyleBackColor = false;
-            this.buttonFactura.Click += new System.EventHandler(this.buttonFactura_Click);
             // 
             // buttonEliminar
             // 
@@ -285,7 +269,7 @@
             // bicisGrid
             // 
             this.bicisGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bicisGrid.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+            this.bicisGrid.BackgroundColor = System.Drawing.Color.Honeydew;
             this.bicisGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bicisGrid.Location = new System.Drawing.Point(0, 89);
             this.bicisGrid.Name = "bicisGrid";
@@ -385,7 +369,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MECANICO_REVISION;
         private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO_REVISION;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button buttonFactura;
         private System.Windows.Forms.Button buttonEliminar;
         private System.Windows.Forms.Button buttonActualizar;
         private System.Windows.Forms.Label label2;

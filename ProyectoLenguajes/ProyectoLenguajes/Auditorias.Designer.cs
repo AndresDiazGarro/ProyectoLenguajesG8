@@ -44,10 +44,9 @@
             this.panel2.Controls.Add(this.btn_AuditTaller);
             this.panel2.Controls.Add(this.btn_AuditBike);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Location = new System.Drawing.Point(310, 188);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(232, 153);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(668, 371);
+            this.panel2.Size = new System.Drawing.Size(501, 301);
             this.panel2.TabIndex = 2;
             // 
             // btn_AuditUsers
@@ -56,10 +55,9 @@
             this.btn_AuditUsers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_AuditUsers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_AuditUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AuditUsers.Location = new System.Drawing.Point(509, 192);
-            this.btn_AuditUsers.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AuditUsers.Location = new System.Drawing.Point(382, 156);
             this.btn_AuditUsers.Name = "btn_AuditUsers";
-            this.btn_AuditUsers.Size = new System.Drawing.Size(120, 46);
+            this.btn_AuditUsers.Size = new System.Drawing.Size(90, 37);
             this.btn_AuditUsers.TabIndex = 21;
             this.btn_AuditUsers.Text = "Usuarios";
             this.btn_AuditUsers.UseVisualStyleBackColor = false;
@@ -70,10 +68,9 @@
             this.btn_AuditTaller.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_AuditTaller.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_AuditTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AuditTaller.Location = new System.Drawing.Point(272, 192);
-            this.btn_AuditTaller.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AuditTaller.Location = new System.Drawing.Point(204, 156);
             this.btn_AuditTaller.Name = "btn_AuditTaller";
-            this.btn_AuditTaller.Size = new System.Drawing.Size(120, 46);
+            this.btn_AuditTaller.Size = new System.Drawing.Size(90, 37);
             this.btn_AuditTaller.TabIndex = 20;
             this.btn_AuditTaller.Text = "Taller";
             this.btn_AuditTaller.UseVisualStyleBackColor = false;
@@ -84,10 +81,9 @@
             this.btn_AuditBike.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_AuditBike.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_AuditBike.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AuditBike.Location = new System.Drawing.Point(35, 192);
-            this.btn_AuditBike.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AuditBike.Location = new System.Drawing.Point(26, 156);
             this.btn_AuditBike.Name = "btn_AuditBike";
-            this.btn_AuditBike.Size = new System.Drawing.Size(120, 46);
+            this.btn_AuditBike.Size = new System.Drawing.Size(90, 37);
             this.btn_AuditBike.TabIndex = 19;
             this.btn_AuditBike.Text = "Bicicletas";
             this.btn_AuditBike.UseVisualStyleBackColor = false;
@@ -99,11 +95,10 @@
             this.label10.BackColor = System.Drawing.Color.Bisque;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(259, 36);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.MinimumSize = new System.Drawing.Size(119, 43);
+            this.label10.Location = new System.Drawing.Point(194, 29);
+            this.label10.MinimumSize = new System.Drawing.Size(90, 35);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(147, 43);
+            this.label10.Size = new System.Drawing.Size(120, 35);
             this.label10.TabIndex = 18;
             this.label10.Text = "Auditorias";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -114,10 +109,9 @@
             this.btn2_regresarform4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn2_regresarform4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn2_regresarform4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2_regresarform4.Location = new System.Drawing.Point(1143, 687);
-            this.btn2_regresarform4.Margin = new System.Windows.Forms.Padding(4);
+            this.btn2_regresarform4.Location = new System.Drawing.Point(857, 558);
             this.btn2_regresarform4.Name = "btn2_regresarform4";
-            this.btn2_regresarform4.Size = new System.Drawing.Size(133, 46);
+            this.btn2_regresarform4.Size = new System.Drawing.Size(100, 37);
             this.btn2_regresarform4.TabIndex = 22;
             this.btn2_regresarform4.Text = "REGRESAR";
             this.btn2_regresarform4.UseVisualStyleBackColor = false;
@@ -125,13 +119,15 @@
             // 
             // Auditorias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
-            this.ClientSize = new System.Drawing.Size(1289, 746);
+            this.ClientSize = new System.Drawing.Size(967, 606);
             this.Controls.Add(this.btn2_regresarform4);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Auditorias";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Auditorias";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

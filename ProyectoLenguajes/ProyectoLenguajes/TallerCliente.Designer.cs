@@ -33,9 +33,6 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.buttonFactura = new System.Windows.Forms.Button();
-            this.buttonEliminar = new System.Windows.Forms.Button();
-            this.buttonActualizar = new System.Windows.Forms.Button();
             this.bicisGrid = new System.Windows.Forms.DataGridView();
             this.btnConsultarEnInventario = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
@@ -99,9 +96,6 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.buttonFactura);
-            this.panel3.Controls.Add(this.buttonEliminar);
-            this.panel3.Controls.Add(this.buttonActualizar);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.bicisGrid);
             this.panel3.Controls.Add(this.btnConsultarEnInventario);
@@ -110,50 +104,10 @@
             this.panel3.Size = new System.Drawing.Size(917, 259);
             this.panel3.TabIndex = 12;
             // 
-            // buttonFactura
-            // 
-            this.buttonFactura.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonFactura.BackColor = System.Drawing.Color.Snow;
-            this.buttonFactura.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFactura.Location = new System.Drawing.Point(753, 46);
-            this.buttonFactura.Name = "buttonFactura";
-            this.buttonFactura.Size = new System.Drawing.Size(94, 28);
-            this.buttonFactura.TabIndex = 10;
-            this.buttonFactura.Text = "Factura";
-            this.buttonFactura.UseVisualStyleBackColor = false;
-            this.buttonFactura.Click += new System.EventHandler(this.buttonFactura_Click);
-            // 
-            // buttonEliminar
-            // 
-            this.buttonEliminar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonEliminar.BackColor = System.Drawing.Color.Snow;
-            this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEliminar.Location = new System.Drawing.Point(279, 46);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(94, 28);
-            this.buttonEliminar.TabIndex = 9;
-            this.buttonEliminar.Text = "Eliminar";
-            this.buttonEliminar.UseVisualStyleBackColor = false;
-            // 
-            // buttonActualizar
-            // 
-            this.buttonActualizar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonActualizar.BackColor = System.Drawing.Color.Snow;
-            this.buttonActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonActualizar.Location = new System.Drawing.Point(179, 46);
-            this.buttonActualizar.Name = "buttonActualizar";
-            this.buttonActualizar.Size = new System.Drawing.Size(94, 28);
-            this.buttonActualizar.TabIndex = 8;
-            this.buttonActualizar.Text = "Actualizar";
-            this.buttonActualizar.UseVisualStyleBackColor = false;
-            // 
             // bicisGrid
             // 
             this.bicisGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bicisGrid.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+            this.bicisGrid.BackgroundColor = System.Drawing.Color.Honeydew;
             this.bicisGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bicisGrid.Location = new System.Drawing.Point(0, 89);
             this.bicisGrid.Name = "bicisGrid";
@@ -200,9 +154,6 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button buttonFactura;
-        private System.Windows.Forms.Button buttonEliminar;
-        private System.Windows.Forms.Button buttonActualizar;
         private System.Windows.Forms.DataGridView bicisGrid;
         private System.Windows.Forms.Button btnConsultarEnInventario;
     }

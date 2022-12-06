@@ -80,8 +80,9 @@
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.AuditbicisGrid);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Auditoria_Bici";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Auditoria_Bici";
             ((System.ComponentModel.ISupportInitialize)(this.AuditbicisGrid)).EndInit();
             this.ResumeLayout(false);

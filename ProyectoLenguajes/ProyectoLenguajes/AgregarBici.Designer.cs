@@ -327,6 +327,7 @@
             this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(985, 653);
             this.Name = "AgregarBici";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarBici";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

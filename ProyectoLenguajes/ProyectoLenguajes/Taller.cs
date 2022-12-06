@@ -162,6 +162,10 @@ namespace ProyectoLenguajes
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Datos actualizados.");
 
+                Taller taller = new Taller(usuario_activo);
+                taller.Show();
+                this.Hide();
+
             }
             catch (Exception)
             {
