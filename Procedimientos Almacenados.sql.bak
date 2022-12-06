@@ -235,47 +235,6 @@ BEGIN
       INSERT INTO AUDITORIA_BICICLETAS (USUARIO, ACCION,FECHA) VALUES (VUSUARIO, VACCION, VFECHA);
 END;
 
-
-
-
---AUDITORIA DE TABLA TALLER
-
-CREATE TABLE AUDITORIA_TALLER (
-Id_Record NUMBER GENERATED ALWAYS AS IDENTITY,
-Accion VARCHAR2(200),
-Usuario VARCHAR2(20),
-Fecha DATE,
-PRIMARY KEY (Id_Record)
-);
-
---PISTA DE TALLER 
-CREATE OR REPLACE TRIGGER PISTA_AUDITORIA_TALLER
-AFTER INSERT OR DELETE OR UPDATE ON TALLER
-DECLARE
-  VUSUARIO VARCHAR2(20);
-  VACCION VARCHAR2(200);
-  VFECHA DATE;
-BEGIN
-  SELECT USER, SYSDATE INTO VUSUARIO, VFECHA FROM DUAL;
-    IF INSERTING THEN
-      VACCION := 'SE AGREGÓ UNA BICICLETA NUEVA AL TALLER';
-    ELSIF UPDATING THEN
-      VACCION := 'SE ACTUALIZÓ UNA BICICLETA DEL TALLER';
-    ELSIF DELETING THEN
-      VACCION := 'SE ELIMINÓ UNA BICICLETA DEL TALLER';
-    END IF;
-      INSERT INTO AUDITORIA_TALLER (USUARIO, ACCION,FECHA) VALUES (VUSUARIO, VACCION, VFECHA);
-END;
-
----------------------------------------------------------------------------------
---Seleccionar Auditoria de taller para consultar
-CREATE OR REPLACE PROCEDURE seleccionarTallerAudits(audit_taller out sys_refcursor)
-AS
- BEGIN
-  OPEN audit_taller FOR SELECT Id_Record, Accion, Usuario, Fecha
-   FROM AUDITORIA_TALLER
-    Order by Id_Record ASC;
-END;
 ---------------------------------------------------------------------------------
 --Seleccionar Auditoria de bicicletas para consultar
 CREATE OR REPLACE PROCEDURE seleccionarBikeAudits(audit_bicis out sys_refcursor)
