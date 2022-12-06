@@ -276,6 +276,7 @@
             this.bicisGrid.RowHeadersWidth = 51;
             this.bicisGrid.Size = new System.Drawing.Size(917, 154);
             this.bicisGrid.TabIndex = 4;
+            this.bicisGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bicisGrid_CellContentClick_1);
             // 
             // btnConsultarEnInventario
             // 

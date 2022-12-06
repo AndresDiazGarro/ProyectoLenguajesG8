@@ -1,4 +1,6 @@
 ﻿using GMap.NET;
+using GMap.NET.WindowsForms.Markers;
+using GMap.NET.WindowsForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -65,11 +67,46 @@ namespace ProyectoLenguajes
 
         private void gMap_Load(object sender, EventArgs e)
         {
-            gMap.MapProvider = GMap.NET.MapProviders.BingMapProvider.Instance; //Establece proveedor de mapas
+            gMap.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance; //Establece proveedor de mapas
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly; //Configura en solo datos del servidor
             gMap.SetPositionByKeywords("San Jose, Costa Rica"); //Establecer Ciudad, Pais
-            gMap.Position = new GMap.NET.PointLatLng(9.9363147, -84.0790631); //Coordenadas de Ciclo Boutique CR
+            gMap.Position = new GMap.NET.PointLatLng(9.9363147, -84.0790631); //Coordenadas de posicion inicial
             gMap.ShowCenter = false; //Eliminar + Rojo en gMap
+
+            GMapOverlay markersSJ = new GMapOverlay("markers"); //Marcador San Jose
+            GMapMarker markerSJ = new GMarkerGoogle(
+            new PointLatLng(9.9363147, -84.0790631),
+                GMarkerGoogleType.blue_pushpin);
+            markersSJ.Markers.Add(markerSJ);
+            gMap.Overlays.Add(markersSJ);
+
+            GMapOverlay markersAJ = new GMapOverlay("markers"); //Marcador Alajuela
+            GMapMarker markerAJ = new GMarkerGoogle(
+                new PointLatLng(9.989498, -84.2874799),
+                GMarkerGoogleType.red_pushpin);
+            markersAJ.Markers.Add(markerAJ);
+            gMap.Overlays.Add(markersAJ);
+
+            GMapOverlay markersCG = new GMapOverlay("markers"); //Marcador Cartago
+            GMapMarker markerCG = new GMarkerGoogle(
+                new PointLatLng(9.8667534, -84.0633935),
+                GMarkerGoogleType.purple_pushpin);
+            markersCG.Markers.Add(markerCG);
+            gMap.Overlays.Add(markersCG);
+
+            GMapOverlay markersHR = new GMapOverlay("markers"); //Marcador Heredia
+            GMapMarker markerHR = new GMarkerGoogle(
+                new PointLatLng(9.9971108, -84.1892609),
+                GMarkerGoogleType.yellow_pushpin);
+            markersHR.Markers.Add(markerHR);
+            gMap.Overlays.Add(markersHR);
+
+            GMapOverlay markersLIM = new GMapOverlay("markers"); //Marcador Limon
+            GMapMarker markerLIM = new GMarkerGoogle(
+                new PointLatLng(10.3251669, -83.7215197),
+                GMarkerGoogleType.green_pushpin);
+            markersCG.Markers.Add(markerLIM);
+            gMap.Overlays.Add(markersLIM);
         }
 
 

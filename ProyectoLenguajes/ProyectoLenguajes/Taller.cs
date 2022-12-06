@@ -193,5 +193,10 @@ namespace ProyectoLenguajes
             fact.Show();
             this.Hide();
         }
+
+        private void bicisGrid_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
