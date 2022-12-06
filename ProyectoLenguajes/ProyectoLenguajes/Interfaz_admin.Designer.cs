@@ -37,6 +37,7 @@
             this.bannerLogo = new System.Windows.Forms.Panel();
             this.imgLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelNavbar.SuspendLayout();
             this.bannerLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
@@ -46,6 +47,7 @@
             // panelNavbar
             // 
             this.panelNavbar.BackColor = System.Drawing.Color.PowderBlue;
+            this.panelNavbar.Controls.Add(this.button1);
             this.panelNavbar.Controls.Add(this.btn_Audits);
             this.panelNavbar.Controls.Add(this.btnPerfil);
             this.panelNavbar.Controls.Add(this.btnUbicacion);
@@ -55,7 +57,11 @@
             this.panelNavbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNavbar.Location = new System.Drawing.Point(0, 0);
             this.panelNavbar.Name = "panelNavbar";
+<<<<<<< Updated upstream
             this.panelNavbar.Size = new System.Drawing.Size(926, 73);
+=======
+            this.panelNavbar.Size = new System.Drawing.Size(1092, 73);
+>>>>>>> Stashed changes
             this.panelNavbar.TabIndex = 0;
             // 
             // btn_Audits
@@ -153,11 +159,28 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(938, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 57);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Facturacion";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Interfaz_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< Updated upstream
             this.ClientSize = new System.Drawing.Size(926, 568);
+=======
+            this.ClientSize = new System.Drawing.Size(1092, 568);
+>>>>>>> Stashed changes
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelNavbar);
             this.Name = "Interfaz_admin";
@@ -182,5 +205,6 @@
         private System.Windows.Forms.PictureBox imgLogo;
         private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Button btn_Audits;
+        private System.Windows.Forms.Button button1;
     }
 }

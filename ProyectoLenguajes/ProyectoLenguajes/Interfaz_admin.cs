@@ -65,5 +65,12 @@ namespace ProyectoLenguajes
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            FacturacionAdmin factura = new FacturacionAdmin(usuario_activo);
+            factura.Show();
+            this.Hide();
+        }
     }
 }

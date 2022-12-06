@@ -78,25 +78,6 @@ namespace ProyectoLenguajes
                 comando1.ExecuteNonQuery();
                 MessageBox.Show("Maestro agregado con éxito");
 
-                try
-                {
-                    OracleCommand comando2 = new OracleCommand("DETALLE_FACTURA", conexion);
-                    comando2.CommandType = System.Data.CommandType.StoredProcedure;
-                    comando2.Parameters.Add("ADD_DESCRIPCION", OracleType.VarChar).Value = txtDesc.Text;
-                    comando2.Parameters.Add("ADD_CANTIDAD", OracleType.VarChar).Value = txtCant.Text;
-                    comando2.Parameters.Add("ADD_PRECIO", OracleType.VarChar).Value = txtPrec.Text;
-                    comando2.Parameters.Add("ADD_MONTO", OracleType.VarChar).Value = txtMont.Text;
-
-                    comando2.ExecuteNonQuery();
-                    MessageBox.Show("Detalle agregado con éxito");
-
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Error al agregar el detalle");
-
-                }
-
             }
             catch (Exception)
             {
@@ -104,8 +85,28 @@ namespace ProyectoLenguajes
 
             }
 
+            try
+            {
+                OracleCommand comando2 = new OracleCommand("DETALLE_FACTURA", conexion);
+                comando2.CommandType = System.Data.CommandType.StoredProcedure;
+                comando2.Parameters.Add("ADD_DESCRIPCION", OracleType.VarChar).Value = txtDesc.Text;
+                comando2.Parameters.Add("ADD_CANTIDAD", OracleType.VarChar).Value = txtCant.Text;
+                comando2.Parameters.Add("ADD_PRECIO", OracleType.VarChar).Value = txtPrec.Text;
+                comando2.Parameters.Add("ADD_MONTO", OracleType.VarChar).Value = txtMont.Text;
+                comando2.Parameters.Add("ADD_ID_FACTURA", OracleType.VarChar).Value = textConfirmar.Text;
+
+                comando2.ExecuteNonQuery();
+                MessageBox.Show("Detalle agregado con éxito");
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al agregar el detalle");
+
+            }
+
             /*Mostrar los datos recién agregados a la factura */
- 
+
             OracleCommand comando = new OracleCommand("seleccionarDetalle", conexion);
             comando.CommandType = System.Data.CommandType.StoredProcedure;
             comando.Parameters.Add("detalle", OracleType.Cursor).Direction = ParameterDirection.Output;

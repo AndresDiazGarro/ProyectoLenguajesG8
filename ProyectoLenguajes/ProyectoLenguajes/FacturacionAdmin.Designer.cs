@@ -63,6 +63,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblFactura = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textConfirmar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.detallesGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,7 +136,7 @@
             this.label7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(501, 71);
+            this.label7.Location = new System.Drawing.Point(463, 71);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 17);
             this.label7.TabIndex = 6;
@@ -406,7 +408,7 @@
             this.lblFecha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblFecha.Location = new System.Drawing.Point(663, 100);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(99, 35);
+            this.lblFecha.Size = new System.Drawing.Size(99, 21);
             this.lblFecha.TabIndex = 39;
             // 
             // lblFactura
@@ -415,16 +417,38 @@
             this.lblFactura.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblFactura.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblFactura.Location = new System.Drawing.Point(479, 100);
+            this.lblFactura.Location = new System.Drawing.Point(449, 97);
             this.lblFactura.Name = "lblFactura";
-            this.lblFactura.Size = new System.Drawing.Size(115, 24);
+            this.lblFactura.Size = new System.Drawing.Size(80, 23);
             this.lblFactura.TabIndex = 40;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label17.Location = new System.Drawing.Point(559, 71);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(77, 17);
+            this.label17.TabIndex = 41;
+            this.label17.Text = "Confirmar#";
+            // 
+            // textConfirmar
+            // 
+            this.textConfirmar.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textConfirmar.Location = new System.Drawing.Point(554, 100);
+            this.textConfirmar.Name = "textConfirmar";
+            this.textConfirmar.Size = new System.Drawing.Size(82, 20);
+            this.textConfirmar.TabIndex = 42;
             // 
             // FacturacionAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textConfirmar);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.lblFactura);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.button1);
@@ -506,5 +530,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblFactura;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textConfirmar;
     }
 }

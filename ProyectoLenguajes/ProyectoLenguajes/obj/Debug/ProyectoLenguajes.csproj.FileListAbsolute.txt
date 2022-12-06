@@ -122,3 +122,5 @@ C:\Users\chris\Documents\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes
 C:\Users\chris\Documents\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Auditoria_Taller.resources
 C:\Users\danny\source\repos\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Auditoria_Taller.resources
 C:\Users\danny\source\repos\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.FacturacionCliente.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Auditoria_Taller.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.FacturacionCliente.resources
