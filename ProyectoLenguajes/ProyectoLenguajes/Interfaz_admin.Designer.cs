@@ -58,7 +58,11 @@
             this.panelNavbar.Location = new System.Drawing.Point(0, 0);
             this.panelNavbar.Name = "panelNavbar";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.panelNavbar.Size = new System.Drawing.Size(926, 73);
+=======
+            this.panelNavbar.Size = new System.Drawing.Size(1092, 73);
+>>>>>>> Stashed changes
 =======
             this.panelNavbar.Size = new System.Drawing.Size(1092, 73);
 >>>>>>> Stashed changes
@@ -177,7 +181,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.ClientSize = new System.Drawing.Size(926, 568);
+=======
+            this.ClientSize = new System.Drawing.Size(1092, 568);
+>>>>>>> Stashed changes
 =======
             this.ClientSize = new System.Drawing.Size(1092, 568);
 >>>>>>> Stashed changes
