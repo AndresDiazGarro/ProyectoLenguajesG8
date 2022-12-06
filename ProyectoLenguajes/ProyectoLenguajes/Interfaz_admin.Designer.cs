@@ -55,7 +55,7 @@
             this.panelNavbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNavbar.Location = new System.Drawing.Point(0, 0);
             this.panelNavbar.Name = "panelNavbar";
-            this.panelNavbar.Size = new System.Drawing.Size(771, 73);
+            this.panelNavbar.Size = new System.Drawing.Size(926, 73);
             this.panelNavbar.TabIndex = 0;
             // 
             // btn_Audits
@@ -157,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 568);
+            this.ClientSize = new System.Drawing.Size(926, 568);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelNavbar);
             this.Name = "Interfaz_admin";

@@ -28,31 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.btnsearch = new System.Windows.Forms.Button();
             this.gMap = new GMap.NET.WindowsForms.GMapControl();
-            this.cbubicaciones = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // btnsearch
-            // 
-            this.btnsearch.Location = new System.Drawing.Point(713, 2);
-            this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(75, 23);
-            this.btnsearch.TabIndex = 1;
-            this.btnsearch.Text = "Ir a";
-            this.btnsearch.UseVisualStyleBackColor = true;
-            this.btnsearch.Click += new System.EventHandler(this.button1_Click);
             // 
             // gMap
             // 
@@ -62,7 +42,7 @@
             this.gMap.GrayScaleMode = false;
             this.gMap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMap.LevelsKeepInMemmory = 5;
-            this.gMap.Location = new System.Drawing.Point(0, 212);
+            this.gMap.Location = new System.Drawing.Point(13, 305);
             this.gMap.MarkersEnabled = true;
             this.gMap.MaxZoom = 18;
             this.gMap.MinZoom = 2;
@@ -76,54 +56,54 @@
             this.gMap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMap.ShowTileGridLines = false;
-            this.gMap.Size = new System.Drawing.Size(800, 239);
+            this.gMap.Size = new System.Drawing.Size(904, 289);
             this.gMap.TabIndex = 3;
             this.gMap.Zoom = 8D;
             this.gMap.Load += new System.EventHandler(this.gMap_Load);
             // 
-            // cbubicaciones
-            // 
-            this.cbubicaciones.FormattingEnabled = true;
-            this.cbubicaciones.Location = new System.Drawing.Point(0, 3);
-            this.cbubicaciones.Name = "cbubicaciones";
-            this.cbubicaciones.Size = new System.Drawing.Size(121, 21);
-            this.cbubicaciones.TabIndex = 4;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 31);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 124);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(775, 175);
+            this.dataGridView1.Size = new System.Drawing.Size(908, 175);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Tan;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Location = new System.Drawing.Point(794, 12);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(126, 57);
+            this.btnRegresar.TabIndex = 6;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // Ubicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
+            this.ClientSize = new System.Drawing.Size(929, 606);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.cbubicaciones);
             this.Controls.Add(this.gMap);
-            this.Controls.Add(this.btnsearch);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(984, 739);
             this.Name = "Ubicacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ubicacion";
             this.Load += new System.EventHandler(this.Ubicacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Button btnsearch;
         private GMap.NET.WindowsForms.GMapControl gMap;
-        private System.Windows.Forms.ComboBox cbubicaciones;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

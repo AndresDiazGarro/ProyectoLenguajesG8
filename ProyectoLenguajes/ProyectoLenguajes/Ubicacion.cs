@@ -120,5 +120,17 @@ namespace ProyectoLenguajes
             conexion.Open();
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Interfaz_admin formulario2 = new Interfaz_admin(usuario_activo);
+            formulario2.Show();
+            this.Hide();
+        }
     }
 }

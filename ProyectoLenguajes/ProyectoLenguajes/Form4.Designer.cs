@@ -67,7 +67,7 @@
             this.btnRegresar.BackColor = System.Drawing.Color.Tan;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(820, 20);
+            this.btnRegresar.Location = new System.Drawing.Point(791, 20);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(126, 57);
             this.btnRegresar.TabIndex = 2;
@@ -130,6 +130,7 @@
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bicicletas";
+            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bicisGrid)).EndInit();
             this.ResumeLayout(false);
 
