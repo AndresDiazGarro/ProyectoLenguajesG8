@@ -1,6 +1,6 @@
 -----------------------PROCEDIMIENTOS ALMACENADOS DE USUARIOS---------------------
 
-/* Creaciòn Usuario (CREATE) */
+/* CreaciÃ²n Usuario (CREATE) */
 
 CREATE OR REPLACE PACKAGE CREACION_CUENTA
 IS
@@ -226,11 +226,11 @@ DECLARE
 BEGIN
   SELECT USER, SYSDATE INTO VUSUARIO, VFECHA FROM DUAL;
     IF INSERTING THEN
-      VACCION := 'SE AGREGÓ UNA BICICLETA NUEVA';
+      VACCION := 'SE AGREGÃ“ UNA BICICLETA NUEVA';
     ELSIF UPDATING THEN
-      VACCION := 'SE ACTUALIZÓ UNA BICICLETA';
+      VACCION := 'SE ACTUALIZÃ“ UNA BICICLETA';
     ELSIF DELETING THEN
-      VACCION := 'SE ELIMINÓ UNA BICICLETA';
+      VACCION := 'SE ELIMINÃ“ UNA BICICLETA';
     END IF;
       INSERT INTO AUDITORIA_BICICLETAS (USUARIO, ACCION,FECHA) VALUES (VUSUARIO, VACCION, VFECHA);
 END;
@@ -298,11 +298,57 @@ END;
 
 
 
+---  Stored procedure en taller consultar
 
+create or replace procedure consultaTaller(bicis out sys_refcursor)
+as
+    begin
+    open bicis for SELECT * from taller;
+end;
 
+---- Stored Procedure Insertar Taller
+create or replace procedure insertarTaller(idBici in number, nombre in varchar2, frenos in varchar2, transmision in varchar2, susp in varchar2, ruedas in varchar2, marco in varchar2, marca in varchar2, problemas in varchar2, observaciones varchar2, mecanico in varchar2, precioRevision in number)
+as 
+    begin
+    insert into taller (ID_BICICLETA,NOMBRE,NOMBRE_FRENOS,NOMBRE_TRANSMISION,NOMBRE_SUSP,NOMBRE_RUEDAS,NOMBRE_MARCO,NOMBRE_MARCA,PROBLEMAS_REPORTADOS,OBSERVACIONES_MECANICO,MECANICO_REVISION,PRECIO_REVISION)values(idBici , nombre , frenos , transmision , susp , ruedas , marco , marca , problemas , observaciones , mecanico , precioRevision );
+end;
 
+---- para probar
+---execute insertarTaller(303, 'SCOTT SCALE 925 BIKE', 'SHIMANO DISC BRAKES', 'Shimano XT-SLX 12', 'Creek Helm','Syncros X-25 TR Rims','FOX 32 Float Rhythm 100mm Fork','SCOTT','Me hace brr cuando subo cuestas','Cadena esta oxidada','Juan','25000');
 
+---- Stored Procedure taller Update
+create or replace procedure updateTaller(idBici in number, nombre in varchar2, frenos in varchar2, transmision in varchar2, susp in varchar2, ruedas in varchar2, marco in varchar2, marca in varchar2, problemas in varchar2, observaciones varchar2, mecanico in varchar2, precioRevision in number)
+as
 
+    IDBICIX number := idBici; 
+    NOMBREX VARCHAR2(30) := nombre;
+    NOMBRE_FRENOSX VARCHAR2(30) := frenos;
+    NOMBRE_TRANSMISIONX VARCHAR2(30) := transmision;
+    NOMBRE_SUSPX VARCHAR2(30) := susp;
+    NOMBRE_RUEDASX VARCHAR2(30) := ruedas;
+    NOMBRE_MARCOX VARCHAR2(30) := marco;
+    Nombre_MARCAX VARCHAR2(30) := marca;
+    PROBLEMAS_REPORTADOSX VARCHAR2(100) := problemas;
+    OBSERVACIONES_MECANICOX VARCHAR2(100) := observaciones;
+    MECANICO_REVISIONX VARCHAR2(30) := mecanico;
+    PRECIO_REVISIONX NUMBER(7) := precioRevision;
 
+begin
+    update taller set NOMBRE=NOMBREX,NOMBRE_FRENOS=NOMBRE_FRENOSX,NOMBRE_TRANSMISION=NOMBRE_TRANSMISIONX,NOMBRE_SUSP=NOMBRE_SUSPX,NOMBRE_RUEDAS=NOMBRE_RUEDASX,NOMBRE_MARCO=NOMBRE_MARCOX,NOMBRE_MARCA=Nombre_MARCAX,
+    PROBLEMAS_REPORTADOS=PROBLEMAS_REPORTADOSX,OBSERVACIONES_MECANICO=OBSERVACIONES_MECANICOX,
+    MECANICO_REVISION=MECANICO_REVISIONX,PRECIO_REVISION=PRECIO_REVISIONX where ID_BICICLETA=IDBICIX;
+exception
+    when NO_DATA_FOUND then
+    null;
+    when others then
+    raise;
+end updateTaller;
 
+--- stored procedure para eliminar en taller
+create or replace procedure eliminarTaller(idBiciTaller in number)
+as
+    idBiciTallerX number := idBiciTaller;
+begin
+    delete from taller where ID_Bicicleta_Taller=idBiciTallerX;
+end;
 
