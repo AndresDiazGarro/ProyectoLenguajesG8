@@ -64,6 +64,8 @@
             // 
             // ubicacionGrid
             // 
+            this.ubicacionGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.ubicacionGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ubicacionGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ubicacionGrid.Location = new System.Drawing.Point(12, 124);
             this.ubicacionGrid.Name = "ubicacionGrid";
