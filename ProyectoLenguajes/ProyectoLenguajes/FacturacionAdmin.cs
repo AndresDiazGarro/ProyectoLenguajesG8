@@ -93,7 +93,7 @@ namespace ProyectoLenguajes
                 comando2.Parameters.Add("ADD_CANTIDAD", OracleType.VarChar).Value = txtCant.Text;
                 comando2.Parameters.Add("ADD_PRECIO", OracleType.VarChar).Value = txtPrec.Text;
                 comando2.Parameters.Add("ADD_MONTO", OracleType.VarChar).Value = txtMont.Text;
-                comando2.Parameters.Add("ADD_ID_FACTURA", OracleType.VarChar).Value = textConfirmar.Text;
+                comando2.Parameters.Add("ADD_ID_FACTURA", OracleType.VarChar).Value = lblFactura.Text;
 
                 comando2.ExecuteNonQuery();
                 MessageBox.Show("Detalle agregado con éxito");
