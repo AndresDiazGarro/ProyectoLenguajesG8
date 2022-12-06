@@ -43,8 +43,8 @@ namespace ProyectoLenguajes
                 conexion.Open();
                 OracleCommand comando = new OracleCommand("seleccionarCoordenadas", conexion);
                 comando.CommandType = System.Data.CommandType.StoredProcedure;
-
                 comando.Parameters.Add("filas_coordenadas", OracleType.Cursor).Direction = ParameterDirection.Output;
+
                 comando.ExecuteNonQuery();
                 OracleDataReader registro = comando.ExecuteReader();
                 if (registro.Read())
@@ -131,6 +131,27 @@ namespace ProyectoLenguajes
             Interfaz_admin formulario2 = new Interfaz_admin(usuario_activo);
             formulario2.Show();
             this.Hide();
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD =DBFide1; USER ID = system;");
+
+            conexion.Open();
+            OracleCommand comando = new OracleCommand("seleccionarCoordenadas", conexion);
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.Parameters.Add("filas_coordenadas", OracleType.Cursor).Direction = ParameterDirection.Output;
+
+            OracleDataAdapter adaptador = new OracleDataAdapter();
+            adaptador.SelectCommand = comando;
+            DataTable tabladeCoordenadas = new DataTable();
+            adaptador.Fill(tabladeCoordenadas);
+            ubicacionGrid.DataSource = tabladeCoordenadas;
+        }
+
+        private void ubicacionGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

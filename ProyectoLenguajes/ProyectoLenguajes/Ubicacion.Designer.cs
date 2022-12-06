@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.gMap = new GMap.NET.WindowsForms.GMapControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ubicacionGrid = new System.Windows.Forms.DataGridView();
             this.btnRegresar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.ubicacionGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // gMap
@@ -61,13 +62,14 @@
             this.gMap.Zoom = 8D;
             this.gMap.Load += new System.EventHandler(this.gMap_Load);
             // 
-            // dataGridView1
+            // ubicacionGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 124);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(908, 175);
-            this.dataGridView1.TabIndex = 5;
+            this.ubicacionGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ubicacionGrid.Location = new System.Drawing.Point(12, 124);
+            this.ubicacionGrid.Name = "ubicacionGrid";
+            this.ubicacionGrid.Size = new System.Drawing.Size(908, 175);
+            this.ubicacionGrid.TabIndex = 5;
+            this.ubicacionGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ubicacionGrid_CellContentClick);
             // 
             // btnRegresar
             // 
@@ -82,28 +84,43 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // btnConsultar
+            // 
+            this.btnConsultar.BackColor = System.Drawing.Color.Tan;
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.Location = new System.Drawing.Point(13, 12);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(126, 57);
+            this.btnConsultar.TabIndex = 7;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
             // Ubicacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
             this.ClientSize = new System.Drawing.Size(929, 606);
+            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ubicacionGrid);
             this.Controls.Add(this.gMap);
             this.MaximumSize = new System.Drawing.Size(984, 739);
             this.Name = "Ubicacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ubicacion";
             this.Load += new System.EventHandler(this.Ubicacion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ubicacionGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private GMap.NET.WindowsForms.GMapControl gMap;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ubicacionGrid;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button btnConsultar;
     }
 }

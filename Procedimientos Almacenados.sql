@@ -318,15 +318,15 @@ END;
 
 ---------------------------------------------------------------------------------
 --Query Select Coordenadas
-SELECT ID_SUCURSAL, NOMBRE_SUCURSAL, LATITUD, LONGITUD
+SELECT ID_SUCURSAL, NOMBRE_SUCURSAL, LATITUD, LONGITUD, DIRECCION
     FROM COORDENADAS;
     
 --Procedimiento almacenado para consulta de Coordenadas
 CREATE OR REPLACE PROCEDURE seleccionarCoordenadas(filas_coordenadas out sys_refcursor)
 AS
     BEGIN
-        OPEN filas_coordenadas FOR SELECT ID_SUCURSAL, NOMBRE_SUCURSAL, LATITUD, LONGITUD
-    FROM COORDENADAS WHERE NOMBRE_SUCURSAL = 'Heredia';
+        OPEN filas_coordenadas FOR SELECT ID_SUCURSAL, NOMBRE_SUCURSAL, LATITUD, LONGITUD, DIRECCION
+    FROM COORDENADAS;
 END;
 
 
