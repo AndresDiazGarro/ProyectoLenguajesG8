@@ -33,5 +33,19 @@ namespace ProyectoLenguajes
             taller.Show();
             this.Hide();
         }
+
+        private void btnUbicacion_Click(object sender, EventArgs e)
+        {
+            Ubicacion ub = new Ubicacion(usuario_activo);
+            ub.Show();
+            this.Hide();
+        }
+
+        private void btnSN_Click(object sender, EventArgs e)
+        {
+            SobreNosotros sn = new SobreNosotros(usuario_activo);
+            sn.Show();
+            this.Hide();
+        }
     }
 }

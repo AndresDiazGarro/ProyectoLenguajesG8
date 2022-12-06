@@ -118,3 +118,4 @@ C:\Users\chris\Documents\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes
 C:\Users\chris\Documents\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.csproj.CopyComplete
 C:\Users\chris\Documents\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.exe
 C:\Users\chris\Documents\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.pdb
+C:\Users\chris\Documents\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.FacturacionCliente.resources

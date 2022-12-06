@@ -17,11 +17,15 @@ namespace ProyectoLenguajes
     {
         OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
 
-        public Ubicacion()
+        public Ubicacion(String usuario_activo)
         {
             InitializeComponent();
-
+            InitializeComponent();
+            this.usuario_activo = usuario_activo;
         }
+
+
+        String usuario_activo;
 
         private void button1_Click(object sender, EventArgs e)
 

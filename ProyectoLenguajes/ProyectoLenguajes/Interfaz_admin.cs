@@ -35,7 +35,7 @@ namespace ProyectoLenguajes
 
         private void btnUbicacion_Click(object sender, EventArgs e)
         {
-            Ubicacion ubicacion = new Ubicacion();
+            Ubicacion ubicacion = new Ubicacion(usuario_activo);
             ubicacion.Show();
             this.Hide();
         }
