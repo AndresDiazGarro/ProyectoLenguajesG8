@@ -246,6 +246,25 @@ BEGIN
       INSERT INTO AUDITORIA_TALLER (USUARIO, ACCION,FECHA) VALUES (VUSUARIO, VACCION, VFECHA);
 END;
 
+--Usuarios 
+CREATE OR REPLACE TRIGGER PISTA_AUDITORIA_USUARIOS
+AFTER INSERT OR DELETE OR UPDATE ON USUARIOS
+DECLARE
+  VUSUARIO VARCHAR2(20);
+  VACCION VARCHAR2(200);
+  VFECHA DATE;
+BEGIN
+  SELECT USER, SYSDATE INTO VUSUARIO, VFECHA FROM DUAL;
+    IF INSERTING THEN
+      VACCION := 'SE AGREGÓ UN USUARIO NUEVO';
+    ELSIF UPDATING THEN
+      VACCION := 'SE ACTUALIZÓ UN USUARIO';
+    ELSIF DELETING THEN
+      VACCION := 'SE ELIMINÓ UN USUARIO';
+    END IF;
+      INSERT INTO AUDITORIA_USUARIOS (USUARIO, ACCION,FECHA) VALUES (VUSUARIO, VACCION, VFECHA);
+END;
+
 ---------------------------------------------------------------------------------
 --Seleccionar Auditoria de taller para consultar
 CREATE OR REPLACE PROCEDURE seleccionarTallerAudits(audit_taller out sys_refcursor)
@@ -262,6 +281,15 @@ AS
  BEGIN
   OPEN audit_bicis FOR SELECT Id_Record, Accion, Usuario, Fecha
    FROM AUDITORIA_BICICLETAS
+    Order by Id_Record ASC;
+END;
+
+--Seleccionar Auditoria de usuarios para consultar
+CREATE OR REPLACE PROCEDURE seleccionarUsuariosAudits(audit_usuarios out sys_refcursor)
+AS
+ BEGIN
+  OPEN audit_usuarios FOR SELECT Id_Record, Accion, Usuario, Fecha
+   FROM AUDITORIA_USUARIOS
     Order by Id_Record ASC;
 END;
 
@@ -297,6 +325,7 @@ END GUARDA_DETALLE;
 --Query Select Coordenadas
 SELECT ID_SUCURSAL, NOMBRE_SUCURSAL, LATITUD, LONGITUD, DIRECCION
     FROM COORDENADAS;
+    
     
 --Procedimiento almacenado para consulta de Coordenadas
 CREATE OR REPLACE PROCEDURE seleccionarCoordenadas(filas_coordenadas out sys_refcursor)
