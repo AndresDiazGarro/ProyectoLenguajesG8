@@ -1,6 +1,6 @@
 ﻿namespace ProyectoLenguajes
 {
-    partial class Auditoria_Taller
+    partial class Auditoria_Usuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,7 @@
             this.btnRegresar.Location = new System.Drawing.Point(832, 31);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(126, 57);
-            this.btnRegresar.TabIndex = 7;
+            this.btnRegresar.TabIndex = 10;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
@@ -55,7 +55,7 @@
             this.btnConsultar.Location = new System.Drawing.Point(8, 31);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(126, 57);
-            this.btnConsultar.TabIndex = 6;
+            this.btnConsultar.TabIndex = 9;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
@@ -68,9 +68,9 @@
             this.AuditbicisGrid.Name = "AuditbicisGrid";
             this.AuditbicisGrid.RowHeadersWidth = 58;
             this.AuditbicisGrid.Size = new System.Drawing.Size(590, 422);
-            this.AuditbicisGrid.TabIndex = 5;
+            this.AuditbicisGrid.TabIndex = 8;
             // 
-            // Auditoria_Taller
+            // Auditoria_Usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,10 +79,8 @@
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.AuditbicisGrid);
-            this.Name = "Auditoria_Taller";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Auditoria_Taller";
-            this.Load += new System.EventHandler(this.Auditoria_Taller_Load);
+            this.Name = "Auditoria_Usuarios";
+            this.Text = "Auditoria_Usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.AuditbicisGrid)).EndInit();
             this.ResumeLayout(false);
 

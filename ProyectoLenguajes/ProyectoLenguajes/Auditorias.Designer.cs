@@ -61,6 +61,7 @@
             this.btn_AuditUsers.TabIndex = 21;
             this.btn_AuditUsers.Text = "Usuarios";
             this.btn_AuditUsers.UseVisualStyleBackColor = false;
+            this.btn_AuditUsers.Click += new System.EventHandler(this.btn_AuditUsers_Click);
             // 
             // btn_AuditTaller
             // 

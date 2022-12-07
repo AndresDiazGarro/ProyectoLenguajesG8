@@ -172,6 +172,15 @@ Fecha DATE,
 PRIMARY KEY (Id_Record)
 );
 
+--AUDITORIA DE TABLA USUARIOS
+CREATE TABLE AUDITORIA_USUARIOS (
+Id_Record NUMBER GENERATED ALWAYS AS IDENTITY,
+Accion VARCHAR2(200),
+Usuario VARCHAR2(20),
+Fecha DATE,
+PRIMARY KEY (Id_Record)
+);
+
 --------------------------------INSERTS DE DATOS-------------------------------------
 --Marca Inserts
 INSERT ALL 
