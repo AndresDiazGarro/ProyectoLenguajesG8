@@ -11,12 +11,12 @@ using System.Data.OracleClient;
 
 namespace ProyectoLenguajes
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
 
     {
         OracleConnection conexion = new OracleConnection("DATA SOURCE = ORCL; PASSWORD = DBFide1; USER ID = system;");
       
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -69,14 +69,14 @@ namespace ProyectoLenguajes
                 {
                     if (registro["Rol"].ToString().Equals("Cliente"))
                     {
-                        MessageBox.Show("Ingreso exitoso");
+                        //MessageBox.Show("Ingreso exitoso");
                         Interfaz_cliente int_cliente = new Interfaz_cliente(usuario_activo);
                         int_cliente.Show();
                         this.Hide();
                     }
                     else if (registro["Rol"].ToString().Equals("Administrador"))
                     {
-                        MessageBox.Show("Ingreso exitoso");
+                        //MessageBox.Show("Ingreso exitoso");
                         Interfaz_admin int_admin = new Interfaz_admin(usuario_activo);
                         int_admin.Show();
                         this.Hide();

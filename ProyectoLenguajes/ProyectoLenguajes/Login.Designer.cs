@@ -1,6 +1,6 @@
 ﻿namespace ProyectoLenguajes
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -116,7 +116,7 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,7 +133,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Name = "Form1";
+            this.Name = "Login";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio Sesion";

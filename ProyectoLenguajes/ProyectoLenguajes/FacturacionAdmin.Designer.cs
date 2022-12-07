@@ -462,7 +462,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FacturacionAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "Facturacion Admin";
             ((System.ComponentModel.ISupportInitialize)(this.detallesGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -95,11 +95,17 @@
     <Compile Include="EliminarBici.Designer.cs">
       <DependentUpon>EliminarBici.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="UbicacionCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UbicacionCliente.Designer.cs">
+      <DependentUpon>UbicacionCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="FacturacionCliente.cs">
       <SubType>Form</SubType>
@@ -161,11 +167,11 @@
     <Compile Include="Ubicacion.Designer.cs">
       <DependentUpon>Ubicacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="BiciAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="BiciAdmin.Designer.cs">
+      <DependentUpon>BiciAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Perfil_Cliente.cs">
       <SubType>Form</SubType>
@@ -202,8 +208,11 @@
     <EmbeddedResource Include="FacturacionCliente.resx">
       <DependentUpon>FacturacionCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="UbicacionCliente.resx">
+      <DependentUpon>UbicacionCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Perfil_admin.resx">
       <DependentUpon>Perfil_admin.cs</DependentUpon>
@@ -229,8 +238,8 @@
     <EmbeddedResource Include="Ubicacion.resx">
       <DependentUpon>Ubicacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="BiciAdmin.resx">
+      <DependentUpon>BiciAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Perfil_Cliente.resx">
       <DependentUpon>Perfil_Cliente.cs</DependentUpon>

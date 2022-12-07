@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ProyectoLenguajes
 {
-    public partial class Form4 : Form
+    public partial class BiciAdmin : Form
     {
-        public Form4(String usuario_activo)
+        public BiciAdmin(String usuario_activo)
         {
             InitializeComponent();
             this.usuario_activo = usuario_activo;

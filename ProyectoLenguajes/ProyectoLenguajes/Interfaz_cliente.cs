@@ -36,7 +36,7 @@ namespace ProyectoLenguajes
 
         private void btnUbicacion_Click(object sender, EventArgs e)
         {
-            Ubicacion ub = new Ubicacion(usuario_activo);
+            UbicacionCliente ub = new UbicacionCliente(usuario_activo);
             ub.Show();
             this.Hide();
         }
@@ -52,6 +52,13 @@ namespace ProyectoLenguajes
         {
             BiciCliente BC = new BiciCliente(usuario_activo);
             BC.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FacturacionCliente fact = new FacturacionCliente(usuario_activo);
+            fact.Show();
             this.Hide();
         }
     }

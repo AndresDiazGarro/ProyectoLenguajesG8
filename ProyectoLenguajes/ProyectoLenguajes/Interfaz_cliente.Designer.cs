@@ -30,6 +30,7 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelNavbar = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
             this.btnSN = new System.Windows.Forms.Button();
             this.btnUbicacion = new System.Windows.Forms.Button();
@@ -46,16 +47,16 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.imgBanner;
-            this.pictureBox1.Location = new System.Drawing.Point(-83, 89);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(-62, 72);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1377, 540);
+            this.pictureBox1.Size = new System.Drawing.Size(1196, 522);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // panelNavbar
             // 
             this.panelNavbar.BackColor = System.Drawing.Color.Wheat;
+            this.panelNavbar.Controls.Add(this.button1);
             this.panelNavbar.Controls.Add(this.btnPerfil);
             this.panelNavbar.Controls.Add(this.btnSN);
             this.panelNavbar.Controls.Add(this.btnUbicacion);
@@ -64,20 +65,31 @@
             this.panelNavbar.Controls.Add(this.bannerLogo);
             this.panelNavbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNavbar.Location = new System.Drawing.Point(0, 0);
-            this.panelNavbar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelNavbar.Name = "panelNavbar";
-            this.panelNavbar.Size = new System.Drawing.Size(1283, 90);
+            this.panelNavbar.Size = new System.Drawing.Size(1134, 73);
             this.panelNavbar.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(943, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 57);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Facturacion";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnPerfil
             // 
             this.btnPerfil.FlatAppearance.BorderSize = 0;
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerfil.Location = new System.Drawing.Point(659, 11);
-            this.btnPerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPerfil.Location = new System.Drawing.Point(494, 9);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(172, 70);
+            this.btnPerfil.Size = new System.Drawing.Size(129, 57);
             this.btnPerfil.TabIndex = 6;
             this.btnPerfil.Text = "Perfil";
             this.btnPerfil.UseVisualStyleBackColor = true;
@@ -88,10 +100,9 @@
             this.btnSN.FlatAppearance.BorderSize = 0;
             this.btnSN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSN.Location = new System.Drawing.Point(1048, 11);
-            this.btnSN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSN.Location = new System.Drawing.Point(786, 9);
             this.btnSN.Name = "btnSN";
-            this.btnSN.Size = new System.Drawing.Size(201, 70);
+            this.btnSN.Size = new System.Drawing.Size(151, 57);
             this.btnSN.TabIndex = 5;
             this.btnSN.Text = "Sobre Nosotros";
             this.btnSN.UseVisualStyleBackColor = true;
@@ -102,10 +113,9 @@
             this.btnUbicacion.FlatAppearance.BorderSize = 0;
             this.btnUbicacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUbicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUbicacion.Location = new System.Drawing.Point(839, 11);
-            this.btnUbicacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUbicacion.Location = new System.Drawing.Point(629, 9);
             this.btnUbicacion.Name = "btnUbicacion";
-            this.btnUbicacion.Size = new System.Drawing.Size(201, 70);
+            this.btnUbicacion.Size = new System.Drawing.Size(151, 57);
             this.btnUbicacion.TabIndex = 4;
             this.btnUbicacion.Text = "Ubicación";
             this.btnUbicacion.UseVisualStyleBackColor = true;
@@ -116,10 +126,9 @@
             this.btnTaller.FlatAppearance.BorderSize = 0;
             this.btnTaller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaller.Location = new System.Drawing.Point(449, 11);
-            this.btnTaller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTaller.Location = new System.Drawing.Point(337, 9);
             this.btnTaller.Name = "btnTaller";
-            this.btnTaller.Size = new System.Drawing.Size(201, 70);
+            this.btnTaller.Size = new System.Drawing.Size(151, 57);
             this.btnTaller.TabIndex = 3;
             this.btnTaller.Text = "Taller";
             this.btnTaller.UseVisualStyleBackColor = true;
@@ -130,10 +139,9 @@
             this.btnBicicletas.FlatAppearance.BorderSize = 0;
             this.btnBicicletas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBicicletas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBicicletas.Location = new System.Drawing.Point(240, 11);
-            this.btnBicicletas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBicicletas.Location = new System.Drawing.Point(180, 9);
             this.btnBicicletas.Name = "btnBicicletas";
-            this.btnBicicletas.Size = new System.Drawing.Size(201, 70);
+            this.btnBicicletas.Size = new System.Drawing.Size(151, 57);
             this.btnBicicletas.TabIndex = 2;
             this.btnBicicletas.Text = "Bicicletas";
             this.btnBicicletas.UseVisualStyleBackColor = true;
@@ -144,30 +152,27 @@
             this.bannerLogo.BackColor = System.Drawing.Color.Tan;
             this.bannerLogo.Controls.Add(this.imgLogo);
             this.bannerLogo.Location = new System.Drawing.Point(0, 0);
-            this.bannerLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bannerLogo.Name = "bannerLogo";
-            this.bannerLogo.Size = new System.Drawing.Size(233, 90);
+            this.bannerLogo.Size = new System.Drawing.Size(175, 73);
             this.bannerLogo.TabIndex = 1;
             // 
             // imgLogo
             // 
             this.imgLogo.BackColor = System.Drawing.Color.Tan;
             this.imgLogo.BackgroundImage = global::ProyectoLenguajes.Properties.Resources.logoBicis;
-            this.imgLogo.Location = new System.Drawing.Point(53, 5);
-            this.imgLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imgLogo.Location = new System.Drawing.Point(40, 4);
             this.imgLogo.Name = "imgLogo";
-            this.imgLogo.Size = new System.Drawing.Size(115, 81);
+            this.imgLogo.Size = new System.Drawing.Size(86, 66);
             this.imgLogo.TabIndex = 2;
             this.imgLogo.TabStop = false;
             // 
             // Interfaz_cliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1283, 635);
+            this.ClientSize = new System.Drawing.Size(1134, 516);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelNavbar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Interfaz_cliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vista Cliente";
@@ -190,5 +195,6 @@
         private System.Windows.Forms.Button btnBicicletas;
         private System.Windows.Forms.Panel bannerLogo;
         private System.Windows.Forms.PictureBox imgLogo;
+        private System.Windows.Forms.Button button1;
     }
 }

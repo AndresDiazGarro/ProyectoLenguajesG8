@@ -1,6 +1,6 @@
 ﻿namespace ProyectoLenguajes
 {
-    partial class Form4
+    partial class BiciAdmin
     {
         /// <summary>
         /// Required designer variable.

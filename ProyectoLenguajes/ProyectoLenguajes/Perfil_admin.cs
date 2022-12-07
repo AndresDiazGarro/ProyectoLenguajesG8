@@ -130,7 +130,7 @@ namespace ProyectoLenguajes
                 comando.Parameters.Add("usua_act", OracleType.VarChar).Value = usuario_activo;
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Cuenta eliminada con éxito");
-                Form1 formulario1 = new Form1();
+                Login formulario1 = new Login();
                 formulario1.Show();
                 this.Hide();
             }
@@ -144,7 +144,7 @@ namespace ProyectoLenguajes
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 formulario1 = new Form1();
+            Login formulario1 = new Login();
             formulario1.Show();
             this.Hide();
         }

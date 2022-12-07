@@ -76,34 +76,37 @@ namespace ProyectoLenguajes
                 comando1.Parameters.Add("ADD_FECHA", OracleType.VarChar).Value = lblFecha.Text;
 
                 comando1.ExecuteNonQuery();
-                MessageBox.Show("Maestro agregado con éxito");
+                //  MessageBox.Show("Maestro agregado con éxito");
+
+                try
+                {
+                    OracleCommand comando2 = new OracleCommand("DETALLE_FACTURA", conexion);
+                    comando2.CommandType = System.Data.CommandType.StoredProcedure;
+                    comando2.Parameters.Add("ADD_DESCRIPCION", OracleType.VarChar).Value = txtDesc.Text;
+                    comando2.Parameters.Add("ADD_CANTIDAD", OracleType.VarChar).Value = txtCant.Text;
+                    comando2.Parameters.Add("ADD_PRECIO", OracleType.VarChar).Value = txtPrec.Text;
+                    comando2.Parameters.Add("ADD_MONTO", OracleType.VarChar).Value = txtMont.Text;
+                    comando2.Parameters.Add("ADD_ID_FACTURA", OracleType.VarChar).Value = lblFactura.Text;
+
+                    comando2.ExecuteNonQuery();
+                    //MessageBox.Show("Detalle agregado con éxito");
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error al agregar el detalle");
+
+                }
 
             }
+
             catch (Exception)
             {
                 MessageBox.Show("Error al agregar encabezado");
 
             }
 
-            try
-            {
-                OracleCommand comando2 = new OracleCommand("DETALLE_FACTURA", conexion);
-                comando2.CommandType = System.Data.CommandType.StoredProcedure;
-                comando2.Parameters.Add("ADD_DESCRIPCION", OracleType.VarChar).Value = txtDesc.Text;
-                comando2.Parameters.Add("ADD_CANTIDAD", OracleType.VarChar).Value = txtCant.Text;
-                comando2.Parameters.Add("ADD_PRECIO", OracleType.VarChar).Value = txtPrec.Text;
-                comando2.Parameters.Add("ADD_MONTO", OracleType.VarChar).Value = txtMont.Text;
-                comando2.Parameters.Add("ADD_ID_FACTURA", OracleType.VarChar).Value = lblFactura.Text;
-
-                comando2.ExecuteNonQuery();
-                MessageBox.Show("Detalle agregado con éxito");
-
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Error al agregar el detalle");
-
-            }
+           
 
             /*Mostrar los datos recién agregados a la factura */
 
@@ -129,7 +132,7 @@ namespace ProyectoLenguajes
             comando1.CommandType = System.Data.CommandType.StoredProcedure;
 
             comando1.ExecuteNonQuery();
-            MessageBox.Show("Tablas Limpias");
+           // MessageBox.Show("Tablas Limpias");
             conexion.Close();
 
             Interfaz_admin formulario2 = new Interfaz_admin(usuario_activo);

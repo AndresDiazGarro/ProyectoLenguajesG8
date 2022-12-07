@@ -61,7 +61,7 @@ namespace ProyectoLenguajes
                     comando2.ExecuteNonQuery();
                     MessageBox.Show("Bicicleta agregada con éxito");
 
-                    Form4 f4 = new Form4(usuario_activo);
+                    BiciAdmin f4 = new BiciAdmin(usuario_activo);
                     f4.Show();
                     this.Hide();
                 }
@@ -75,7 +75,7 @@ namespace ProyectoLenguajes
 
         private void btn_regresarform4_Click(object sender, EventArgs e)
         {
-            Form4 formulario4 = new Form4(usuario_activo);
+            BiciAdmin formulario4 = new BiciAdmin(usuario_activo);
             formulario4.Show();
             this.Hide();
         }

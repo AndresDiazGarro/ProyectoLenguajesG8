@@ -73,7 +73,7 @@ namespace ProyectoLenguajes
 
                     MessageBox.Show("Cuenta creada con éxito");
 
-                    Form1 formulario1 = new Form1();
+                    Login formulario1 = new Login();
                     formulario1.Show();
                     this.Hide();
 

@@ -71,7 +71,6 @@ C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\Proy
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Auditoria_Bici.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.EliminarBici.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.FacturacionAdmin.resources
-C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Form1.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Perfil_admin.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Interfaz_admin.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Crear_Cuenta.resources
@@ -80,7 +79,6 @@ C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\Proy
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Taller.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.TallerCliente.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Ubicacion.resources
-C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Form4.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Perfil_Cliente.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Properties.Resources.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.csproj.GenerateResource.cache
@@ -128,3 +126,6 @@ C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\Proyec
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.BiciCliente.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.FacturacionCliente.resources
 C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.BiciCliente.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.Login.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.UbicacionCliente.resources
+C:\Users\fidelitas\Documents\GitHub\ProyectoLenguajesG8\ProyectoLenguajesG8\ProyectoLenguajes\ProyectoLenguajes\ProyectoLenguajes\obj\Debug\ProyectoLenguajes.BiciAdmin.resources
